@@ -1,0 +1,32 @@
+<div class="form">
+  <div class="container">
+    <div class="row">
+      <%#= link_to "back", request.referer.present? ? request.referer : default_path,  class:"link-border" %>
+
+        <h3> Project </h3>
+          <%= simple_form_for(@project) do |f| %>
+            <div class="form-inputs">
+              <%= f.input :name %>
+              <%= f.input :name2 %>
+              <%= f.select :category, Project::CATEGORIES, prompt: " Category ? " %>
+              <%= f.input :ranking, collection: 1..100 %>
+              <%= f.input :date %>
+              <%= f.input :presentation %>
+              <%= f.input :commentary, as: :text, :input_html => {:style => 'width: 100%', :rows => 1} %>
+              <% if @project.photo? %>
+              <%= @project[:photo] %>
+              <%= f.input :photo %>
+              <% else %>
+              <%= f.input :photo %>
+            <% end %>
+            </div>
+            <div class="form-actions">
+              <%= f.submit %>
+            </div>
+          <% end %>
+
+    </div>
+  </div>
+</div>
+
+

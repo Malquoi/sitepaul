@@ -1,0 +1,97 @@
+<%= render 'shared/navbar/navbar' %>
+<%#= render 'shared/navbar/navbar_project_xs'%>
+
+
+<div class="skeleton text-center">
+
+  <div class="skeleton-left text-center">
+    <div class="link-border-container">
+    <div id="link-rotate-right">
+
+
+
+
+    </div>
+    </div>
+  </div>
+
+
+  <div class="skeleton-middle text-center">
+    <div class="project">
+
+
+      <div class= "project-tools">
+        <div>
+          <% if current_user %>
+
+          <a href="" class="link-admin">
+              <%= link_to "update |", edit_project_path(@project), class: "link" %>
+              </a>
+          <a href="" class="link-admin">
+              <%#= link_to " new artwork", new_project_artwork_path(@project), class: "link" %>
+              </a>
+            <% end %>
+        </div>
+        <div></div>
+      </div>
+
+
+
+
+        <div class=project-presentation>
+          <p class="project-project-name-xs hidden-sm hidden-md hidden-lg" ><%= @project.name %><span> </span><%= @project.name2%></p>
+          <p class="project-project-name hidden-xs" ><%= @project.name%><span> </span><%=@project.name2%></p>
+          <p class="project-project-presentation hidden-xs"><%= @project.presentation%></p>
+          <p class="project-project-presentation-xs hidden-sm hidden-md hidden-lg"><%= @project.presentation%></p>
+          <p class="project-project-date"><%=@project.date%></p>
+          <p class="project-project-commentary hidden-xs"><%= simple_format(@project.commentary, class: "project-project-commentary hidden-xs")%></p>
+          <p class="project-project-commentary-xs hidden-sm hidden-md hidden-lg"><%= simple_format(@project.commentary, class: "project-project-commentary-xs hidden-sm hidden-md hidden-lg") %></p>
+        </div>
+
+
+
+
+<div class="project-artworks-container">
+          <div class="hidden-box hidden-xs"></div>
+          <div class="hidden-box-xs hidden-sm hidden-md hidden-lg"></div>
+            <div class="row">
+
+
+              <%# @project.artworks.each do |artwork| %>
+                <div class="col-xs-12" >
+                  <div class="artwork-photo-card">
+                    <div class= "artwork-photo" >
+
+                      <a class="artwork-photo-link" href="<%#= artwork_path(artwork) %>">
+                        <p class="hidden-xs hidden-sm ">
+                        <%#=cl_image_tag artwork.photo, height: 600, crop: :scale %>
+                      </p>
+                      <p class=" hidden-md hidden-lg">
+                        <%#=cl_image_tag artwork.photo, height: 230, crop: :scale %>
+                      </p>
+                    </a>
+                    </div>
+              <div class="artwork-photo-description text-center">
+
+                <a class="artwork-photo-title-link" href="<%#= artwork_path(artwork) %>"><%#= artwork.title %> (<%#= artwork.date%>)</a>
+              </div>
+            </div>
+          </div>
+        <%# end %>
+
+    </div>
+  <div class="hidden-box-bottom-xs hidden-lg"></div>
+</div>
+
+
+</div>
+</div>
+
+
+  <div class="skeleton-right text-center">
+  <div class="link-border-container">
+    <div id="link-rotate-left"><%= link_to "- home -", projects_path,  class:"link-border" %></div>
+  </div>
+</div>
+
+</div>

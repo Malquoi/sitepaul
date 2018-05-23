@@ -1,0 +1,36 @@
+<div class="form">
+  <div class="container">
+    <div class="row">
+
+
+
+        <h3>Artwork</h3>
+        <div class="form-inputs">
+          <%= simple_form_for [@project, @artwork] do |f| %>
+            <%= f.input :title %>
+             <%= f.collection_select :project_id, Project.all, :id, :name %>
+            <%= f.input :ranking, collection: 1..100 %>
+            <%= f.select :category, Artwork::CATEGORIES2, prompt: " Type ? " %>
+            <%= f.input :description %>
+            <%= f.input :format %>
+            <%= f.input :date %>
+            <%= f.input :commentary, as: :text, :input_html => {:style => 'width: 100%', :rows => 1} %>
+             <% if @artwork.photo? %>
+              <%= @artwork[:photo] %>
+              <%= f.input :photo %>
+              <% else %>
+              <%= f.input :photo %>
+            <% end %>
+             </div>
+            <div class="form-actions">
+            <%= f.submit %>
+            </div>
+            <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-div-hidden"></div>
+
+
+

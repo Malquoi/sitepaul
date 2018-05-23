@@ -1,0 +1,76 @@
+<div class="page hidden-xs">
+
+  <%= render 'shared/navbar/navbar' %>
+
+  <div class="skeleton text-center hidden-xs">
+
+    <div class="skeleton-left text-center">
+      <div class="link-border-container">
+        <div class= "link-left" id="link-rotate-right">
+          <%=link_to "- home -", projects_path, class: "link-border" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="skeleton-middle text-center" >
+
+      <div class="projects-top-bottom hidden-xs">
+        <div class="title-vr">
+          VIRTUAL | REALITY
+        </div>
+      </div>
+
+
+      <div class="projects-vr">
+        <div class="row">
+          <% @projects.each do |project| %>
+            <div class="col-xs-12">
+              <div class="project-card-vr" >
+                <div class="project-name">
+                  <div id="project-path"><%= link_to project.name, showvr_project_path(project), class: "link-project-vr"%></div>
+                  </div>
+                </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="projects-top-bottom hidden-xs">
+        <div class= "top-bottom-shadow"></div>
+          <div class= "projects-title-bottom">
+        <div>
+            <%= link_to "VR | PERFORMANCE", "https://vimeo.com/213874707", class: "link-bottom-title"%>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+
+    <div class="skeleton-right text-center">
+      <div class="link-border-container">
+        <p id="link-rotate-left"> <%#=link_to "- NEWS -", events_path, class: "link-border-news" %></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<div class="page hidden-sm hidden-md hidden-lg">
+
+<%= render 'shared/navbar/navbar_project_xs'%>
+
+  <div class="skeleton-xs text-center hidden-sm hidden-md hidden-lg">
+    <div class="skeleton-middle-xs text-center" >
+      <div class="projects-content-xs hidden-sm hidden-md hidden-lg ">
+          <%= render 'shared/projects/projects_vr_content_xs' %>
+      </div>
+    </div>
+  </div>
+
+</div>
+

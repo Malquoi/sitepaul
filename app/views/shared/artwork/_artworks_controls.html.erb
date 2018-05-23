@@ -1,0 +1,13 @@
+<div class= "controls">
+
+          <p><% if artwork = @artwork.previous  %>
+              <%= link_to artwork.title, artwork_path(artwork), class: "link-project"%>
+            <% end %>
+            <span>|</span>
+      <% if artwork = @artwork.next %>
+        <%= link_to artwork.title, artwork_path(artwork), class: "link-project"%>
+      <% end %></p>
+
+
+
+      </div>

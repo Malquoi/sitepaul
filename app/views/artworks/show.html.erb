@@ -1,0 +1,135 @@
+<div class="page hidden-xs">
+
+  <%= render 'shared/navbar/navbar_artwork' %>
+
+
+  <div class="skeleton text-center">
+
+    <div class="skeleton-left text-center hidden-xs">
+      <div class="link-border-container">
+      <p id="link-rotate-right"> <%= link_to "project", project_path(@artwork.project), class:"link-border"%> </p>
+      </div>
+    </div>
+
+
+    <div class="skeleton-middle text-center hidden-xs">
+      <div class="artwork">
+        <div class= "artwork-tools">
+            <%= render 'shared/artwork/artworks_controls' %>
+        </div>
+
+        <div class="artwork-artwork-photo-card hidden-xs hidden-sm hidden-md">
+          <div class= "artwork-artwork-photo" >
+            <%= cl_image_tag @artwork.photo,height: 610, crop: :scale %>
+          </div>
+        </div>
+        <div class="artwork-artwork-photo-card-md hidden-xs hidden-sm hidden-lg">
+          <div class= "artwork-artwork-photo" >
+            <%= cl_image_tag @artwork.photo,height: 540, crop: :scale %>
+          </div>
+        </div>
+        <div class="artwork-artwork-photo-card-sm hidden-xs hidden-md hidden-lg">
+          <div class= "artwork-artwork-photo" >
+            <%= cl_image_tag @artwork.photo,height: 400, crop: :scale %>
+          </div>
+        </div>
+
+        <div class="artwork-container">
+          <div class="artwork-hidden-box"></div>
+          <div class= "artwork-row">
+            <div id="priming"><i class="far fa-window-minimize"></i></div>
+            <p> <span id="artwork-title"><%=@artwork.title.mb_chars.upcase.to_s %></span>, <span id="artwork-date"><%=@artwork.date.mb_chars.upcase.to_s%></span></p>
+            <p id="artwork-description"><%=@artwork.description.mb_chars.upcase.to_s%></p>
+            <p id="artwork-format"> <%=@artwork.format.mb_chars.upcase.to_s%></p>
+            <p id="artwork-commentary"><%= @artwork.commentary%></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="skeleton-right text-center hidden-xs">
+      <div class="link-border-container">
+
+    </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="page hidden-sm hidden-md hidden-lg ">
+
+  <%#= render 'shared/navbar/navbar_artwork_xs' %>
+
+  <div class="skeleton text-center">
+
+
+<div class="skeleton-middle-xs text-center hidden-sm hidden-md hidden-lg">
+      <div class="artwork-xs">
+        <div class= "artwork-tools-xs">
+          <%#= render 'shared/artworks_controls' %>
+        </div>
+
+        <div class="artwork-artwork-photo-card-xs hidden-sm hidden-md hidden-lg">
+          <div class= "artwork-artwork-photo" >
+          <%= cl_image_tag @artwork.photo, width: 350, height: 350, crop: :fit %>
+          </div>
+        </div>
+
+        <div class="artwork-container-xs">
+          <div class="artwork-hidden-box-xs"></div>
+
+            <div class= "artwork-row-xs">
+              <div class="artwork-artwork-card-hidden"><i class="fa fa-angle-left"></i></div>
+              <div class="artwork-artwork-card">
+                <i class="far fa-window-minimize"></i>
+                <p> <span id="artwork-title"><%=@artwork.title.mb_chars.upcase.to_s %></span>, <span id="artwork-date"><%=@artwork.date.mb_chars.upcase.to_s%></span></p>
+                <p id="artwork-description"><%=@artwork.description.mb_chars.upcase.to_s%></p>
+                <p id="artwork-format"> <%=@artwork.format.mb_chars.upcase.to_s%></p>
+                <p id="artwork-commentary"><%= @artwork.commentary%></p>
+              </div>
+            </div>
+          </div>
+          <div class= "artwork-tools-bottom-hidden"></div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

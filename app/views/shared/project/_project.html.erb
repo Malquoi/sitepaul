@@ -1,0 +1,33 @@
+<div class="row">
+  <% @project.artworks.each do |artwork| %>
+    <div class="col-xs-12" >
+      <div class="artwork-photo-card hidden-xs">
+        <div class= "artwork-photo" >
+          <a class="artwork-photo-link" href="<%= artwork_path(artwork) %>">
+            <p class="hidden-xs hidden-sm hidden-md">
+              <%=cl_image_tag artwork.photo, height: 570, crop: :scale %></p>
+            <p class="hidden-xs hidden-sm hidden-lg">
+              <%=cl_image_tag artwork.photo, height: 500, crop: :scale %></p>
+            <p class=" hidden-xs hidden-md hidden-lg"><%=cl_image_tag artwork.photo, height: 330, crop: :scale %></p>
+          </a>
+        </div>
+        <div class="artwork-photo-description text-center">
+        <a class="artwork-photo-title-link" href="<%= artwork_path(artwork) %>"><%= artwork.title %> (<%= artwork.date%>)</a>
+      </div>
+      </div>
+      <div class="artwork-photo-card-xs hidden-sm hidden-md hidden-lg">
+        <div class= "artwork-photo" >
+          <a class="artwork-photo-link" href="<%= artwork_path(artwork) %>">
+            <p class=" hidden-sm hidden-md hidden-lg">
+              <%=cl_image_tag artwork.photo, width: 310, height: 310, crop: :fit %></p>
+          </a>
+        </div>
+        <div class="artwork-photo-description text-center">
+        <a class="artwork-photo-title-link" href="<%= artwork_path(artwork) %>"><%= artwork.title %> (<%= artwork.date%>)</a>
+      </div>
+      </div>
+
+
+    </div>
+  <% end %>
+</div>

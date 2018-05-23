@@ -1,0 +1,232 @@
+.projects-content-xs {
+    width: 100%;
+    position: fixed;
+    top: 6;
+    bottom: 2;
+    overflow-x: auto;
+    overflow-x: hidden;
+    z-index: 5;
+    //background: green;
+
+  }
+
+  .projects-top-xs {
+  height: 29vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: asset-url('300.jpg');
+  background-position: top 0% right 0%,;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  //margin-bottom: 1vh;
+  z-index: 10;
+  margin-top: 8vh;
+  //background-color: blue;
+}
+
+
+
+  .projects-vr-top-xs {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.9;
+  //background: pink;
+  z-index: 5;
+
+}
+
+
+
+.title-xs {
+  margin: auto;
+  //margin-bottom: 5%;
+  font-size: 18px;
+  letter-spacing: 9px;
+  white-space: nowrap;
+  opacity: 1;
+  }
+
+
+  .title-vr-xs {
+    margin: auto;
+    font-size: 14px;
+    letter-spacing: 7px;
+    opacity: 1;
+  }
+
+  .projects-container-xs {
+    width: 100%;
+    position: fixed;
+    top: 45%;
+    bottom: 5%;
+    overflow-x: auto;
+    overflow-x: hidden;
+    //background: pink;
+  }
+
+  .projects-vr-container-xs {
+    position: fixed;
+    top: 20vh;
+    bottom: 2vh;
+    width: 100%;
+    overflow-x: auto;
+    overflow-x: hidden;
+  }
+
+  .col-xs-12 {
+    //background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #col-xs-12-projects-xs {
+    margin-left: 0.5vh;
+  }
+
+  .projects-block-hidden-xs {
+    //height: 26vh;
+    height: 6vh;
+    width: 100%;
+    background: transparent;
+  }
+
+  .projects-vr-block-hidden-xs {
+    height: 3vh;
+    width: 100%;
+    background: transparent;
+  }
+
+  .projects-block-xs {
+   min-height: 58vh;
+   width: 100%;
+   background-color: white;
+   z-index: 9;
+  }
+
+  .projects-vr-block-xs {
+   min-height: 58vh;
+   width: 100%;
+   background-color: white;
+   z-index: 9;
+  }
+
+  .projects-xs {
+  //min-height: 60vh;
+  margin: 0 auto;
+  width: 58%;
+  //padding-top: 10vh;
+  padding-bottom: 14vh;
+  z-index: 10;
+  background: transparent;
+
+
+}
+
+.projects-vr-xs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 58vh;
+  margin: auto;
+  width: 80%;
+  z-index: 3;
+  //padding-top: 3vh;
+  //padding-bottom: 3vh;
+  background-image: asset-url('paulinevrxs.jpg');
+  background-size: cover;
+  border-radius: 2px;
+
+}
+
+.project-card {
+  //background: pink;
+  margin-bottom: 5px;
+}
+
+.project-vr-card-xs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  padding: 0.25% 5%;
+
+  margin: 10%;
+  background: white;
+
+  background: #dd85df;
+  background: #d90812;
+  border-radius: 1px;
+}
+
+  .projects-bottom-xs {
+  height: 29vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 2%;
+  background-image: asset-url('300.jpg');
+  background-position: bottom 0% left 0%,;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  //margin-bottom: 1.2vh;
+  //margin-top: 2vh;
+}
+
+.projects-vr-bottom-xs {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 2%;
+  //background-image: asset-url('nuee150.jpg');
+  //background-position: bottom 0% left 20%,;
+  //background-repeat: no-repeat;
+  //background-size: 60%;
+  //margin-bottom: 1.2vh;
+  margin-top: 3vh;
+}
+
+.title-bottom-xs {
+  margin: auto;
+  padding-bottom: 12%;
+  font-size: 14px;
+  letter-spacing: 7.5px;
+  opacity: 1;
+
+  }
+
+.projects-icons-container {
+  height: 4.5vh;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center ;
+  margin-top: 6vh;
+  //margin-bottom: 1vh;
+  //margin-bottom: 1vh;
+  //background: grey;
+}
+
+.projects-icons {
+display: flex;
+  justify-content: space-between;
+  //background: orange;
+}
+
+.projects-icons i {
+  color: $blackdp;
+  opacity: 0.7;
+  margin: auto;
+  padding-left: 1.4vh;
+  padding-right: 1.4vh;
+}
+
+.events-icons i:hover {
+opacity: 0.4;
+}
+

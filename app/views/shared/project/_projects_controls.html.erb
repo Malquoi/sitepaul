@@ -1,0 +1,29 @@
+<div class= "controls hidden-xs">
+          <p class= "controls-links hidden-xs ">
+            <a href="">
+              <a href=""> <% if project = @project.previous %>
+              <%= link_to project.name, project_path(project), class: "link-control"%>
+              <% end%></a>
+            <span>|</span>
+            <a href="">
+              <% if project = @project.next   %>
+                <%= link_to project.name, project_path(project), class: "link-control"%><% end %>
+
+            </a></p>
+</div>
+
+<div class= "controls-xs hidden-sm hidden-md hidden-lg">
+          <p class= "controls-links-xs hidden-sm hidden-md hidden-lg ">
+            <a href=""> <% if project = @project.previous %>
+              <%= link_to project.name, project_path(project), class: "link-control-xs"%>
+              <% end%></a>
+            <span>|</span>
+            <a href=""><% if project = @project.next  %>
+            <%= link_to project.name, project_path(project), class: "link-control-xs"%><% end %></a></p>
+</div>
+
+
+
+
+
+

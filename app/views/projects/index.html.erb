@@ -1,0 +1,54 @@
+<div class= "page hidden-xs">
+
+  <%= render 'shared/navbar/navbar' %>
+
+  <div class="skeleton text-center hidden-xs">
+
+    <div class="skeleton-left text-center">
+      <div class="link-border-container">
+        <div id= "link-rotate-right">
+          <%=link_to "- Lastest Creations -", lastest_project_path(id:'1'), class: "link-border-lastest"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="skeleton-middle text-center" >
+      <div class="projects-content hidden-xs">
+          <%= render 'shared/projects/projects_content' %>
+      </div>
+      <div class="projects-content-xs hidden-sm hidden-md hidden-lg ">
+          <%= render 'shared/projects/projects_content' %>
+      </div>
+    </div>
+
+    <div class="skeleton-right text-center">
+      <div class="link-border-container">
+        <div id="link-rotate-left">
+         <%#=link_to "- shop -", artworks_path, class: "link-border" %>
+         <%#=link_to "- NEWS -", events_path, class: "link-border-news" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class= "page hidden-sm hidden-md hidden-lg">
+
+  <%= render 'shared/navbar/navbar_xs'%>
+  <div class="skeleton text-center hidden-sm hidden-md hidden-lg">
+    <div class="skeleton-middle-xs text-center" >
+      <div class="projects-content-xs hidden-sm hidden-md hidden-lg ">
+          <%= render 'shared/projects/projects_content_xs' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

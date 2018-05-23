@@ -1,0 +1,40 @@
+.shop-title {
+  height: 13vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 10px;
+}
+
+.shop-title p {
+  margin-left: 10%;
+}
+
+
+.artworks-shop {
+  //background-color: pink;
+  width: 100%;
+
+
+
+}
+
+.shop-container {
+  min-height: 81vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  overflow: auto;
+
+  //background-color: green;
+}
+
+.shop-artwork-card {
+  margin: 5%;
+  //background-color: blue;
+}
+
+
