@@ -1,0 +1,16 @@
+<div class="row">
+  <% @events.each do |event| %>
+    <div class="event-card">
+      <div class="event-card-content">
+        <div class="event-other-card-item" id="event-name"><%= event.name.mb_chars.upcase.to_s %></div>
+        <div class="event-other-card-item" id="event-date"><%= event.date.mb_chars.upcase.to_s%></div>
+        <div class="event-other-card-item" id="event-localisation"><%= event.localisation.mb_chars.upcase.to_s%></div>
+        <div class="event-other-card-item" id="event-information"><%= event.information.mb_chars.upcase.to_s%></div>
+        <% if current_user %>
+          <div><%= link_to "delete ", event_path(event), method: :delete, class:"link"%>    |   <%= link_to "  update", edit_event_path(event), class:"link"%></div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+

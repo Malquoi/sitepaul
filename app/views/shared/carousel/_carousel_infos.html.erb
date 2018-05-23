@@ -1,0 +1,56 @@
+<div id="carousel-example-generic" class="carousel slide"    data-interval="false">
+<!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="infos">
+        <div class="infos-container">
+          <% @events= Info.where(category: "SHOWING") %>
+          <%= render 'shared/infos_presentation' %>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="infos">
+          <div class="infos-container">
+            <% @events= Info.where(category: "RESIDENCE") %>
+            <%= render 'shared/infos_presentation' %>
+          </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="infos">
+        <div class="infos-container">
+          <% @events= Info.where(category: "TEACHING") %>
+          <%= render 'shared/infos_presentation' %>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="infos">
+        <div class="infos-container">
+          <% @events= Info.where(category: "SCENOGRAPHY") %>
+          <%= render 'shared/infos_presentation' %>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="infos">
+        <div class="infos-container">
+          <% @events= Info.where(category: "PRIZE") %>
+          <%= render 'shared/infos_presentation' %>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="infos">
+        <div class="infos-container">
+          <% @events= Info.where(category: "MEDIA") %>
+          <%= render 'shared/infos_presentation' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

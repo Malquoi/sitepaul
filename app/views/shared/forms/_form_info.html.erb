@@ -1,0 +1,22 @@
+<div class="form">
+  <div class="container">
+    <div class="row">
+        <%#= link_to "back", request.referer.present? ? request.referer : default_path,  class:"link-border" %>>
+        <h3> Infos </h3>
+          <%= simple_form_for(@info) do |f| %>
+            <div class="form-inputs">
+              <%= f.select :category, Info::CHOICES, prompt: " Category ? " %>
+              <%= f.input :name %>
+              <%= f.input :date %>
+              <%= f.input :localisation %>
+              <%= f.input :commentary %>
+
+            </div>
+            <div class="form-actions">
+              <%= f.submit %>
+            </div>
+          <% end %>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,92 @@
+<div class="skeleton text-center">
+
+  <div class="skeleton-left text-center">
+    <div class="link-border-container">
+    <p id="link-rotate-right">
+
+      <% if current_user %>
+      <%= link_to "- back -", events_path, class:"link-border" %>
+      <% else %>
+      <%= link_to "- back -", request.referer.present? ? request.referer : default_path,  class:"link-border" %>
+      <% end %>
+    </p>
+  </div>
+   </div>
+
+
+  <div class="skeleton-middle text-center">
+
+    <div class="texts text-center hidden-xs hidden-sm ">
+
+      <div class="texts-banner text-center hidden-xs hidden-sm ">
+          <p></p>
+          <p>- TEXTS -</p>
+      </div>
+      <div class="texts-container">
+        <div class="row">
+          <% @texts.each do |text| %>
+            <% if current_user %>
+              <p><%= link_to "delete", text_path(text), method: :delete, class:"link"%>   <span></span><span>|</span><span></span>   <%= link_to "update", edit_text_path(text), class:"link"%></p>
+            <% end %>
+            <div class="text-card hidden-xs hidden-sm">
+              <div></div>
+              <div id="text-author-top"> <span>by</span> <span></span><%= text.author%></div>
+              <div class="text-content hidden-xs hidden-sm"> <%= simple_format(text.content, class: 'text-content hidden-xs hidden-sm ')%></div>
+              <div class="text-author hidden-xs hidden-sm"><%= simple_format(text.author, class: 'text-author hidden-xs hidden-sm')%></div>
+               <div class="text-presentation-author hidden-xs hidden-sm"><%= simple_format(text.presentation_author, class: 'text-presentation-author hidden-sm') %></div>
+              <p> - </p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="texts-xs text-center hidden-md hidden-lg">
+
+      <div class="texts-banner-xs text-center hidden-md hidden-lg">
+          <p></p>
+          <p>|TEXTS</p>
+      </div>
+      <div class="texts-container">
+        <div class="row">
+          <% @texts.each do |text| %>
+            <% if current_user %>
+              <p><%= link_to "delete", text_path(text), method: :delete, class:"link"%>   <span></span><span>|</span><span></span>   <%= link_to "update", edit_text_path(text), class:"link"%></p>
+            <% end %>
+            <div class="text-card-xs hidden-md hidden-lg ">
+              <div></div>
+              <div id="text-author-top"> <span>by</span> <span></span><%= text.author%></div>
+              <div class="text-content-xs hidden-md hidden-lg "> <%= simple_format(text.content, class: 'text-content-xs hidden-md hidden-l')%></div>
+              <div class="text-author-xs hidden-md hidden-lg"><%= simple_format(text.author, class: 'text-author-xs hidden-md hidden-l')%></div>
+               <div class="text-presentation-author-xs hidden-md hidden-lg "><%= simple_format(text.presentation_author, class: 'text-presentation-author-xs hidden-md hidden-l') %></div>
+              <p> - </p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="skeleton-right text-center">
+    <p></p>
+  </div>
+
+</div>

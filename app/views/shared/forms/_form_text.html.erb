@@ -1,0 +1,20 @@
+<div class="form">
+  <div class="container">
+    <div class="row">
+        <a><%#= link_to "back", request.referer.present? ? request.referer : default_path, class:"link-border" %></a>
+        <h3> Text </h3>
+
+
+         <%= simple_form_for(@text) do |f| %>
+            <div class="form-inputs">
+              <%= f.input :content, as: :text, :input_html => {:style => 'width: 100%', :rows => 15} %>
+              <%= f.input :author %>
+              <%= f.input :presentation_author, as: :text, :input_html => {:style => 'width: 100%', :rows => 3} %>
+            </div>
+            <div class="form-actions">
+              <%= f.submit %>
+            </div>
+          <% end %>
+    </div>
+  </div>
+</div>

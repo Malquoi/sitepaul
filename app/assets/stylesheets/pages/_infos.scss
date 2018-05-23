@@ -1,0 +1,277 @@
+.infos-tools {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.infos-tools-div {
+  margin-top: 1vh;
+  height: 5vh;
+  //background-color: green;
+  width: 40%;
+
+}
+
+
+.controls-top {
+  display: flex;
+  width: 34vh;
+  //background-color: green;
+  padding-left: 3%;
+  //margin-top: 4vh;
+}
+
+.controls-top-xs-sm {
+   display: flex;
+   justify-content: space-between;
+  width: 10vh;
+  //background-color: #eae9e4;
+  //margin-left: 65%;
+  //margin-top: 4vh;
+}
+
+//.controls-top-xs-sm i {
+  //padding-right: 5%;
+//
+
+#carousel-inner-top {
+  height:5vh;
+  overflow: none;
+  width: 190px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color:transparent ;
+  box-shadow: none;
+
+}
+
+.infos-title2 {
+  //height: 20%;
+  font-size: 9px;
+  letter-spacing: 4px;
+  //padding-bottom: 10%;
+  padding-top: 2%;
+  //margin-top: 5%;
+  background-color:transparent;
+}
+
+.pauline-presentation {
+  margin-top: 22vh;
+  margin-bottom:10vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pauline-presentation p {
+
+  font-size: 9px;
+  letter-spacing: 5px;
+
+}
+#pauline-name {
+  font-size: 18px;
+  letter-spacing: 12px;
+  padding-right: 10px;
+  //background-color: pink;
+}
+#pauline-cities {
+  font-size: 11px;
+  padding-right: 19px;
+  margin-top: 20px;
+}
+#pauline-cursus {
+font-size: 9px;
+margin-top: 30px;
+}
+
+.pauline-bio-xs-sm {
+margin-top: 20vh;
+margin-bottom:5vh;
+//padding-left: 10%;
+//padding-right: 10%;
+
+}
+
+#pauline-name-xs-sm {
+  font-size: 12px;
+  letter-spacing: 9px;
+
+}
+
+#pauline-cities-xs-sm {
+  font-size: 11px;
+  padding-right: 10%;
+  margin-top: 20px;
+  padding-left: 10%;
+}
+
+#pauline-cursus-xs-sm {
+font-size: 9px;
+margin-top: 30px;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.info-content {
+  background: white;
+}
+
+.info-container {
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  overflow: auto;
+  position: absolute;
+  top: 14%;
+  bottom: 5%;
+  width: 80%;
+  //padding-left: 2%;
+  //padding-right: 2%;
+  //background-color: yellow;
+
+}
+
+.info-hidden-box {
+  height: 75%;
+  background-color: transparent;
+  //background-color: green;
+}
+
+
+
+
+
+.carousel-infos-titles {
+  height: 25%;
+  //background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  //box-sizing: border-box;
+  //white-space: pre-wrap;
+  white-space: normal;
+
+}
+
+.carousel-infos-titles-xs-sm-md {
+  height: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  //box-sizing: border-box;
+  //white-space: pre-wrap;
+  white-space: normal;
+}
+
+
+.infos-title {
+  //box-sizing: border-box;
+  height: 25%;
+  width: 75%;
+  margin: auto;
+  letter-spacing: 6px;
+  padding-bottom: 10%;
+  margin: auto;
+  font-size: 15px;
+  letter-spacing: 10px;
+  padding-top: 8%;
+  margin-top: 3%;
+  background-color:#eae9e4;
+  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-color:#da78b7;
+}
+
+
+.infos-title p {
+  padding-top: 5px;
+  margin: auto;
+  font-size: 15px;
+  letter-spacing: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  //background-color:orange;
+
+
+}
+
+.infos-title h6 {
+  font-size: 15px;
+  letter-spacing: 10px;
+  padding-top: 10px;
+  padding-left: 6%;
+  padding-right: 5%;
+}
+
+.infos-title-xs-sm-md {
+  //box-sizing: border-box;
+  height: 25%;
+  width: 76%;
+  font-size: 13px;
+  margin: auto;
+  letter-spacing: 6px;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right:10%;
+  padding-top: 8%;
+  margin-top: 3%;
+  background-color:#eae9e4;
+  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+
+
+
+.carousel-inner {
+  height:60vh;
+  width: 80vh;
+  //padding-left: 10vh;
+  //padding-right: 10vh;
+
+  overflow: auto;
+  background-color: #eae9e4 ;
+  border-radius: 2px;
+  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.infos{
+  box-sizing: border-box;
+  min-height:90vh;
+  width: 60%;
+  margin: auto;
+  background-color:#eae9e4;
+  padding-top: 2%;
+  padding-left: 5%;
+
+  padding-right: 5%;
+  padding-bottom: 4%;
+  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  //border-radius: 3px;
+  //background-color: pink;
+
+}
+
+
+#info-name {
+  font-size: 11px;
+}
+
+#info-localisation {
+  font-size: 8px;
+}
+
+#info-date {
+  font-size: 7px;
+}
+
+#info-commentary {
+  font-size: 8px;
+}
+
+
+
+
+
+
+

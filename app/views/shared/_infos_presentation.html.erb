@@ -1,0 +1,12 @@
+<% @infos.each do |info| %>
+      <% if current_user %>
+       <p><%= link_to "delete |", info_path(info), method: :delete, class:"link"%> <%= link_to " update", edit_info_path(info), class:"link"%></p>
+      <% end %></p>
+      <p id="info-name"><%= info.name.mb_chars.upcase.to_s %></p>
+      <p id="info-localisation"><%= info.localisation.mb_chars.upcase.to_s%>
+      <p id="info-date"><%= info.date.mb_chars.upcase.to_s%></p>
+      <p id="info-commentary"><%= info.commentary.mb_chars.upcase.to_s%></p>
+      <p> - </p>
+
+          <% end %>
+

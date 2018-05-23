@@ -1,0 +1,71 @@
+<%= render 'shared/navbar/navbar' %>
+
+<div class="skeleton text-center">
+
+  <div class="skeleton-left text-center">
+    <div class="link-border-container">
+    <p id="link-rotate-right"> <%= link_to "- home -", projects_path,  class:"link-border" %> </p>
+  </div>
+  </div>
+
+
+  <div class="skeleton-middle text-center">
+    <div class= "infos-tools">
+      <div class="events-tools-div hidden-xs"></div>
+      <div class="infos-tools-div hidden-xs">
+      <div class="controls-top hidden-xs hidden-sm">
+        <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left"></i></a><%= render 'shared/carousel/carousel_infos_titles2' %><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right"></i></a>
+      </div>
+
+      <div class="controls-top-xs-sm  hidden-md hidden-lg">
+        <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left"></i></a><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right"></i></a>
+      </div>
+    </div>
+    </div>
+
+        <div class="pauline-presentation hidden-xs hidden-sm">
+
+        <p id="pauline-name">PAULINE | DUFOUR</p>
+        <p id="pauline-cities">NANTES - PARIS</p>
+        <p id="pauline-cursus">DIPLÔMÉE DE LA HAUTE ÉCOLE DES ARTS DU RHIN (ESADS/HEAR) </p>
+      </div>
+
+       <div class="pauline-presentation-xs-sm hidden-md hidden-lg">
+
+        <p id="pauline-name-xs-sm">PAULINE | DUFOUR</p>
+        <p id="pauline-cities-xs-sm">NANTES - PARIS</p>
+        <p id="pauline-cursus-xs-sm">DIPLÔMÉE DE LA HAUTE ÉCOLE DES ARTS DU RHIN (ESADS/HEAR) </p>
+      </div>
+
+
+      <div class="info-container">
+        <div class="info-hidden-box"></div>
+        <div class="carousel-infos-titles-xs-sm-md hidden-lg">
+          <%= render 'shared/carousel/carousel_infos_titles' %>
+        </div>
+        <div class="carousel-infos-titles hidden-xs hidden-sm hidden-md">
+          <%= render 'shared/carousel/carousel_infos_titles' %>
+        </div>
+        <div class="info-content">
+          <div class="row">
+            <div class= "col-xs-12">
+              <%= render 'shared/carousel/carousel_infos' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="skeleton-right text-center">
+    <div class="link-border-container">
+    <p id="link-rotate-left"><%=link_to "- TEXTS -", texts_path, class: "link-border-text"%></p>
+  </div>
+  </div>
+
+</div>
+
+
+
+

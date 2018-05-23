@@ -19,5 +19,11 @@ Rails.application.routes.draw do
 
   resources :artworks, only: [:index]
 
+resources :infos, only: [:index, :new, :create, :edit, :show, :update, :destroy]
+
+resources :events, only: [:index, :new, :create, :edit, :show, :update, :destroy]
+
+resources :texts, only: [:index, :new, :create, :edit, :update, :destroy]
 
 end
+

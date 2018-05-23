@@ -1,0 +1,25 @@
+<div class="form">
+  <div class="container">
+    <div class="row">
+        <%#= link_to "back", request.referer.present? ? request.referer : default_path,  class:"link-border" %>
+        <h3> Event </h3>
+          <%= simple_form_for(@event) do |f| %>
+            <div class="form-inputs">
+              <%= f.select :category, Event::CATEGORIES, prompt: " Category ? " %>
+              <%= f.input :name %>
+              <%= f.input :date %>
+              <%= f.input :localisation %>
+              <%= f.input :information %>
+              <%= f.input :photo %>
+            </div>
+            <div class="form-actions">
+              <%= f.submit %>
+            </div>
+          <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+

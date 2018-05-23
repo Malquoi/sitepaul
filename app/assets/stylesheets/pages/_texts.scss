@@ -1,0 +1,158 @@
+.texts {
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+.texts-banner {
+  display: flex;
+  justify-content: space_between;
+  margin: auto;
+  height: 8vh;
+  width: 82.5%;
+
+  //background-color: yellow;
+
+}
+
+.texts-banner p {
+
+  font-size: 18px;
+  letter-spacing: 9px;
+  margin-top: 4vh;
+  //color: #eae9e4;
+  opacity: 0.8;
+  //font-weight: 1000;
+
+
+}
+
+.texts-banner-xs {
+  display: flex;
+  justify-content: space_between;
+  height: 3vh;
+  width: auto;
+  padding-left: 8%;
+  margin-top: 3vh;
+  //margin-bottom: 1vh;
+  //background-color: yellow;
+}
+
+.texts-banner-xs p {
+
+  font-size: 12px;
+  letter-spacing: 7px;
+
+  //color: #eae9e4;
+  opacity: 0.8;
+  //font-weight: 1000;
+}
+
+
+
+
+.texts-container {
+  margin-top: 5vh;
+  box-sizing: border-box;
+  height: 85%;
+  overflow: auto;
+  width: 80%;
+  //padding-top: 40%;
+  z-index: 2;
+  background-color: transparent;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  //background-color: pink;
+
+}
+
+
+.text-card {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  //margin-top: 3vh;
+  margin-bottom: 10vh;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.text-card-xs {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+
+}
+
+
+
+.text-content {
+  margin-top: 2vh;
+  text-align: left;
+  line-height: 200%;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.text-content-xs {
+  margin-top: 2vh;
+  text-align: left;
+  line-height: 180%;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+.text-author {
+  margin-top: 8vh;
+  font-size: 13px;
+  letter-spacing: 6.5px;
+}
+
+.text-author-xs {
+  margin-top: 8vh;
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+
+
+#text-author-top {
+  text-align: right;
+  font-size: 7px;
+  letter-spacing: 3.5px;
+  margin-bottom: 8vh;
+}
+
+.text-presentation-author {
+  font-size: 9px;
+  letter-spacing: 4.5px;
+}
+
+.text-presentation-author-xs {
+  font-size: 8px;
+  letter-spacing: 3.5px;
+}
+
+.text-banner-hidden {
+  height: 3vh;
+  width: 80%;
+}
+
+

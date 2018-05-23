@@ -1,0 +1,68 @@
+<div class="skeleton text-center">
+
+  <div class="skeleton-left text-center" id="skeleton-left-events">
+    <div class="link-border-container">
+    <div id= "link-rotate-right">
+      <%= link_to "- home -", projects_path,  class:"link-border" %>
+    </div>
+  </div>
+  </div>
+
+  <div class="skeleton-middle text-center" >
+    <div class="events-banner">
+     <div></div>
+      <div class="events-title hidden-xs"><p> - NEWS - </p></div>
+       <div class="events-title-xs hidden-sm hidden-md hidden-lg" ><p># NEWS </p></div>
+    </div>
+    <div class="events text-center hidden-xs">
+      <div class="events-container">
+        <div class="events-card-shadow"></div>
+        <% if @events = Event.where(category: 'last')%>
+          <%= render 'shared/events/events_presentation' %>
+        <% end%>
+        <% if @events = Event.where(category: 'other')%>
+          <%= render 'shared/events/events_presentation_other' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="skeleton-right text-center">
+      <div class="link-border-container" id="link-border-container-events">
+        <div class= "events-icons hidden-xs" style="font-size:1.2em">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+    </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
