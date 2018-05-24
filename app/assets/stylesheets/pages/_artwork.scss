@@ -81,7 +81,7 @@
   align-items: center;
   justify-content: space-around;
   margin: auto;
-  margin-top: 4vh;
+  margin-top: 2vh;
   width: 94%;
   height: auto;
   //box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -133,11 +133,11 @@
 }
 
 .artwork-row {
-  width: 60%;
+  width: 50%;
   background-color: white;
   z-index: 2;
   padding-top: 1vh;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
   //box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   text-align: left;
@@ -146,9 +146,9 @@
   border-width: 1px;
   border-radius: 2px;
   color: #eae9e4;
-  line-height: 100%;
-  margin-bottom: 3vh;
-  margin-left: 40%;
+  line-height: 60%;
+  margin-bottom: 2vh;
+  margin-left: 50%;
 }
 
 .artwork-row p {
