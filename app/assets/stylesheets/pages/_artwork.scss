@@ -40,6 +40,7 @@
 
 .artwork-artwork-photo-card{
   min-height: 90%;
+
   display: flex;
   margin: auto;
   align-items: center;
@@ -80,6 +81,7 @@
   align-items: center;
   justify-content: space-around;
   margin: auto;
+  margin-top: 4vh;
   width: 94%;
   height: auto;
   //box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -100,7 +102,7 @@
 .artwork-container {
   box-sizing: border-box;
   position: absolute;
-  top: 11%;
+  top: 20%;
   bottom: 3%;
   overflow: auto;
   width: 80%;
@@ -173,27 +175,27 @@
 
 #artwork-title {
 
-  font-size: 9px;
-  letter-spacing: 4px;
+  font-size: 10px;
+  letter-spacing: 5px;
 }
 
 #artwork-date {
-  font-size: 9px;
-  letter-spacing: 4px;
+  font-size: 10px;
+  letter-spacing: 5px;
 
 }
 
 #artwork-description {
-  font-size: 8px;
-  letter-spacing: 4px;
+  font-size: 9px;
+  letter-spacing: 4.5px;
   //margin-top: 30px;
 }
 
 
 
 #artwork-format {
-  font-size: 8px;
-  letter-spacing: 4px;
+  font-size: 9px;
+  letter-spacing: 4.5px;
 
 }
 
@@ -201,8 +203,8 @@
 
 
 #artwork-commentary {
-  font-size: 7px;
-  letter-spacing: 3.5px;
+  font-size: 8px;
+  letter-spacing: 4px;
   //margin-top: 50px;
 
 }
