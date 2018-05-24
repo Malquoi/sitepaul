@@ -44,8 +44,8 @@
 .title-xs {
   margin: auto;
   //margin-bottom: 5%;
-  font-size: 18px;
-  letter-spacing: 9px;
+  font-size: 22px;
+  letter-spacing: 8px;
   white-space: nowrap;
   opacity: 1;
   }
@@ -53,27 +53,25 @@
 
   .title-vr-xs {
     margin: auto;
-    font-size: 14px;
-    letter-spacing: 7px;
+    font-size: 22px;
+    letter-spacing: 12px;
     opacity: 1;
   }
 
   .projects-container-xs {
     width: 100%;
-    position: fixed;
-    top: 45%;
-    bottom: 5%;
-    overflow-x: auto;
+    //position: fixed;
+    //top: 45%;
+    //bottom: 5%;
+    overflow-y: auto;
     overflow-x: hidden;
     //background: pink;
   }
 
   .projects-vr-container-xs {
-    position: fixed;
-    top: 20vh;
     bottom: 2vh;
     width: 100%;
-    overflow-x: auto;
+    overflow-y: auto;
     overflow-x: hidden;
   }
 

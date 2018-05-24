@@ -42,6 +42,8 @@ before_action :set_info, only: [:edit, :show, :update, :destroy]
 
 
 
+
+
   private
 
   def set_info
