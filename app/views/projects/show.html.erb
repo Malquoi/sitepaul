@@ -94,6 +94,8 @@
           <p class="project-project-name-xs hidden-sm hidden-md hidden-lg" ><%= @project.name %><span> </span><%= @project.name2%></p>
           <p class="project-project-presentation-xs hidden-sm hidden-md hidden-lg"><%= @project.presentation%></p>
           <p class="project-project-date"><%=@project.date%></p>
+          <p class="project-project-photo"><%=cl_image_tag @project.photo, width: 310, height: 310, crop: :fit %></p></p>
+
           <p class="project-project-commentary-xs hidden-sm hidden-md hidden-lg"><%= simple_format(@project.commentary, class: "project-project-commentary-xs hidden-sm hidden-md hidden-lg") %></p>
         </div>
 
