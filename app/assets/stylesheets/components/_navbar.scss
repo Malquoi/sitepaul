@@ -14,7 +14,7 @@
 
 }
 
-.navbar-left {
+.navbar-left-xs {
   width: 70%;
   //background: yellow;
   height: 15vh;
@@ -50,7 +50,7 @@
 
 
 
-.navbar-right {
+.navbar-right-xs {
   width: 30%;
   height: 15vh;
   //background: orange;
@@ -147,6 +147,26 @@ background: yellow;
 
 
 }
+
+.navbar-left {
+  width: 70%;
+  //background: yellow;
+  height: 4vh;
+  padding-left: 20px;
+}
+
+.navbar-right {
+  width: 30%;
+  height: 4vh;
+  //background: orange;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  align-items: right;
+  position: relative;
+  //justify-content: right;
+}
+
 
 /////////////////////
 
