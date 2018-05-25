@@ -1,5 +1,5 @@
 .navbar-xs {
-  height: 5vh;
+  height: 8vh;
   //padding-top: 3vh;
   width: 100%;
   padding: 0px 0px;
@@ -8,14 +8,14 @@
   z-index: 10;
   color: $blackdp;
   background-color: white;
-  //background-color: black;
+  //background-color: yellow;
 
 }
 
 .navbar-left {
   width: 70%;
   //background: yellow;
-  height: 5vh;
+  height: 8vh;
   padding-left: 20px;
 }
 
@@ -31,9 +31,9 @@
 .home-icon {
   border:none;
   position: absolute;
-  top: 2vh;
-  left: 5vh;
-  opacity: 0.9;
+  top: 3vh;
+  left: 7vh;
+  opacity: 1;
   color:$blackdp;
 
   height: 2vh;
@@ -51,7 +51,7 @@
 
 .navbar-right {
   width: 30%;
-  height: 5vh;
+  height: 8vh;
   //background: orange;
   z-index: 10;
   align-items: center;
@@ -66,9 +66,9 @@
   //background:blue;
   border:none;
   position: absolute;
-  top: 2vh;
-  right: 5vh;
-  opacity: 0.9;
+  top: 3vh;
+  right: 7vh;
+  opacity: 1;
   color:$blackdp;
   height: 2vh;
   cursor:pointer;
