@@ -11,14 +11,14 @@
   }
 
   .projects-top-xs {
-  height: 230px;
-  width: 350px;
+  height: 200px;
+  width: 320px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: asset-url('300.jpg');
-  background-position: top 10% left 1%,;
+
   background-repeat: no-repeat;
   background-size: cover;
   //margin-bottom: 1vh;
@@ -66,6 +66,7 @@
     //position: fixed;
     //top: 45%;
     //bottom: 5%;
+    margin: auto;
     overflow-y: auto;
     overflow-x: hidden;
     //background: pink;
@@ -121,7 +122,7 @@
   .projects-xs {
   //min-height: 60vh;
   margin: 0 auto;
-  width: 58%;
+  //width: 58%;
   //padding-top: 10vh;
   padding-bottom: 5vh;
   z-index: 10;
@@ -148,7 +149,7 @@
 
 .project-card {
   //background: pink;
-  margin-bottom: 5px;
+  margin: auto;
 }
 
 .project-vr-card-xs {
@@ -167,15 +168,14 @@
 }
 
   .projects-bottom-xs {
-  height: 230px;
-  width: 350px;
+  height: 200px;
+  width: 320px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   background-image: asset-url('300.jpg');
-   background-position: top 10% left 1%,;
+  //background-position: top 10% left 1%,;
   background-repeat: no-repeat;
   background-size: cover;
 
