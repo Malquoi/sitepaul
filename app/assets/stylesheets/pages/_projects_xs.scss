@@ -1,23 +1,24 @@
 .projects-content-xs {
     width: 100%;
-    //position: fixed;
+    margin-top: 5vh;
     //top: 10;
     //bottom: 2;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     z-index: 5;
     //background: green;
 
   }
 
   .projects-top-xs {
-  height: 200px;
+  height: 230px;
   width: 350px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: asset-url('600.jpg');
-  background-position: top 10% right 0%,;
+  background-image: asset-url('300.jpg');
+  background-position: top 10% left 1%,;
   background-repeat: no-repeat;
   background-size: cover;
   //margin-bottom: 1vh;
@@ -49,6 +50,7 @@
   white-space: nowrap;
   opacity: 1;
   font-weight: bold;
+  padding-bottom: 10%;
   }
 
 
@@ -64,7 +66,8 @@
     //position: fixed;
     //top: 45%;
     //bottom: 5%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     //background: pink;
   }
 
@@ -85,7 +88,7 @@
   }
 
   #col-xs-12-projects-xs {
-    margin-left: 0.5vh;
+    //margin-left: 0.5vh;
   }
 
   .projects-block-hidden-xs {
@@ -120,7 +123,7 @@
   margin: 0 auto;
   width: 58%;
   //padding-top: 10vh;
-  padding-bottom: 14vh;
+  padding-bottom: 5vh;
   z-index: 10;
   background: transparent;
 
@@ -164,18 +167,22 @@
 }
 
   .projects-bottom-xs {
-  height: 29vh;
+  height: 230px;
+  width: 350px;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 2%;
+
   background-image: asset-url('300.jpg');
-  background-position: bottom 0% left 0%,;
+   background-position: top 10% left 1%,;
   background-repeat: no-repeat;
-  background-size: 100%;
-  //margin-bottom: 1.2vh;
-  //margin-top: 2vh;
+  background-size: cover;
+
 }
+
+
+
 
 .projects-vr-bottom-xs {
   height: 15vh;
@@ -193,9 +200,9 @@
 
 .title-bottom-xs {
   margin: auto;
-  padding-bottom: 12%;
-  font-size: 14px;
-  letter-spacing: 7.5px;
+  padding-bottom: 10%;
+  font-size: 16px;
+  letter-spacing: 8px;
   opacity: 1;
 
   }
@@ -204,9 +211,10 @@
   height: 4.5vh;
   width: 50%;
   margin: auto;
+  margin-bottom: 2vh;
   display: flex;
   justify-content: center ;
-  margin-top: 6vh;
+  //margin-top: 6vh;
   //margin-bottom: 1vh;
   //margin-bottom: 1vh;
   //background: grey;
@@ -220,7 +228,7 @@ display: flex;
 
 .projects-icons i {
   color: $blackdp;
-  opacity: 0.7;
+  //opacity: 0.7;
   margin: auto;
   padding-left: 1.4vh;
   padding-right: 1.4vh;
