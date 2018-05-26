@@ -266,6 +266,7 @@
   opacity: 0.9;
   //text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
    cursor: pointer;
+   z-index: 2;
 }
 .link-top-title-left:hover {
   opacity: 0.4;
@@ -284,6 +285,7 @@
   letter-spacing: 12.5px;
   //background: blue;
   opacity: 0.9;
+  z-index: 2;
   //text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
    cursor: pointer;
    //color: #da78b7;

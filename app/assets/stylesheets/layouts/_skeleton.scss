@@ -1,11 +1,7 @@
-.body {
-  overflow-y: none;
-  overflow-x: none;
 
-}
 .skeleton {
   display: flex;
-
+//background-color : grey;
   //align-items: stretch;
   text-transform: uppercase;
   //text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
@@ -42,7 +38,7 @@
 
 .skeleton-left {
   width: 10%;
-  height: 86vh;
+  height: 81vh;
   position: sticky;
   top: 0px;
   justify-content: space-around;
@@ -55,7 +51,7 @@
 
 .skeleton-middle {
   width:80%;
-  height: 86vh;
+  height: 81vh;
   overflow-y: auto;
   overflow-x: hidden;
   //background-color : grey;
@@ -64,7 +60,7 @@
 .skeleton-middle-xs {
   width:100%;
   text-transform: uppercase;
-  height: 84vh;
+  //height: 84vh;
   margin:auto;
   overflow-y: auto;
   overflow-x: hidden;
@@ -75,7 +71,7 @@
 
 .skeleton-right {
   width: 10%;
-  height: 86vh;
+  height: 81vh;
   position: sticky;
   top: 0px;
   justify-content: space-around;
