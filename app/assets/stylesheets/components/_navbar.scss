@@ -14,9 +14,11 @@
 
 }
 
+
+
 .navbar-left-xs {
   width: 70%;
-  //background: yellow;
+  //background: orange;
   height: 15vh;
   padding-left: 20px;
 }
@@ -33,8 +35,8 @@
 .home-icon {
   border:none;
   position: absolute;
-  top: 3vh;
-  left: 7vh;
+  top: 3.5vh;
+  left: 6vh;
   opacity: 1;
   color:$blackdp;
   //height: 2vh;
@@ -53,7 +55,7 @@
 .navbar-right-xs {
   width: 30%;
   height: 15vh;
-  //background: orange;
+  //background: pink;
   z-index: 10;
   align-items: center;
   display: flex;

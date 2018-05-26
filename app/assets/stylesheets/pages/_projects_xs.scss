@@ -17,11 +17,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   background-image: asset-url('300.jpg');
-  //background-position: top 10% left 1%;
-  //background-repeat: no-repeat;
+  background-position: top 10% left 1%;
+  background-repeat: no-repeat;
   background-size: cover;
-  //margin-bottom: 1vh;
+  margin-bottom: 1vh;
   z-index: 10;
   margin-top: 5vh;
   //background-color: blue;
