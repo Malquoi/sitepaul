@@ -38,7 +38,7 @@
 
 .skeleton-left {
   width: 10%;
-  height: 81vh;
+  height: 86vh;
   position: sticky;
   top: 0px;
   justify-content: space-around;
@@ -51,10 +51,10 @@
 
 .skeleton-middle {
   width:80%;
-  height: 81vh;
+  height: 86vh;
   overflow-y: auto;
   overflow-x: hidden;
-  //background-color : grey;
+  //:background-color : grey;
 }
 
 .skeleton-middle-xs {
@@ -71,7 +71,7 @@
 
 .skeleton-right {
   width: 10%;
-  height: 81vh;
+  height: 86vh;
   position: sticky;
   top: 0px;
   justify-content: space-around;

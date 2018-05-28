@@ -1,18 +1,62 @@
-<div class="row">
-          <% @projects.each do |project| %>
-            <div class="col-sm-3 col-md-3 col-lg-2 ">
-              <div class="project-card " id="project-card-border hidden-xs">
-                <div class="project-name">
-                  <div id="project-path"><%= link_to project.name, project_path(project), class: "link-project"%></div>
-                  <p>-</p>
-                  <div class="project-img hidden-xs">
 
-                      <a><%= cl_image_tag project.photo, height: 400, crop: :scale  %></a>
 
+<div class="projects text-center hidden-xs hidden-sm hidden-md" id="projects-border">
+  <div class="row">
+            <% @projects.each do |project| %>
+              <div class="col-sm-3 col-md-3 col-lg-2 ">
+                <div class="project-card " id="project-card-border hidden-xs">
+                  <div class="project-name">
+                    <div id="project-path"><%= link_to project.name, project_path(project), class: "link-project"%></div>
+                    <p>-</p>
+                    <div class="project-img hidden-xs">
+
+                        <a><%= cl_image_tag project.photo, height: 400, crop: :scale  %></a>
+
+                    </div>
                   </div>
-                </div>
-           </div>
-        </div>
-      <% end %>
-    </div>
+             </div>
+          </div>
+        <% end %>
+      </div>
+</div>
+
+<div class="projects-md text-center hidden-xs hidden-sm hidden-lg" id="projects-border">
+  <div class="row">
+            <% @projects.each do |project| %>
+              <div class="col-sm-3 col-md-3 col-lg-2 ">
+                <div class="project-card " id="project-card-border hidden-xs">
+                  <div class="project-name">
+                    <div id="project-path"><%= link_to project.name, project_path(project), class: "link-project"%></div>
+                    <p>-</p>
+                    <div class="project-img-md hidden-xs hidden-sm hidden-lg">
+
+                        <a><%= cl_image_tag project.photo, height: 400, crop: :scale  %></a>
+
+                    </div>
+                  </div>
+             </div>
+          </div>
+        <% end %>
+      </div>
+</div>
+
+<div class="projects-sm text-center hidden-xs hidden-md hidden-lg" id="projects-border">
+  <div class="row">
+            <% @projects.each do |project| %>
+              <div class="col-sm-3 col-md-3 col-lg-2 ">
+                <div class="project-card " id="project-card-border hidden-xs">
+                  <div class="project-name">
+                    <div id="project-path"><%= link_to project.name, project_path(project), class: "link-project"%></div>
+                    <p>-</p>
+                    <div class="project-img hidden-xs hidden-md hidden-lg" id="projects-img-sm" >
+
+                        <a><%= cl_image_tag project.photo, height: 400, crop: :scale  %></a>
+
+                    </div>
+                  </div>
+             </div>
+          </div>
+        <% end %>
+      </div>
+</div>
 
