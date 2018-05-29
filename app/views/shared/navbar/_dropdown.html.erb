@@ -1,12 +1,10 @@
 
 <div class="dropdown" style="float:left;">
-  <button class="dropbtn"><i class="fas fa-align-justify" style= "font-size:1em"></i></button>
+  <i class="fa fa-bars dropdown-toggle"  data-toggle="dropdown"></i>
   <div class="dropdown-content" >
-    <a><%=link_to "Lastest Creations", lastest_project_path(id:'1'), class: "link"%></a>
-    <a><%=link_to "NEWS", events_path, class: "link" %></a>
-    <a> <%=link_to "about pauline", infos_path, class: "link"%></a>
+    <a><%=link_to "Lastest Creations", lastest_project_path(id:'1'), class: "link-dropdown"%></a>
+    <a><%=link_to "NEWS", events_path, class: "link-dropdown" %></a>
+    <a> <%=link_to "about pauline", infos_path, class: "link-dropdown"%></a>
   </div>
 </div>
-
-
 

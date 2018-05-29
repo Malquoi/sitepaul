@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row hidden-xs">
   <% @events.each do |event| %>
     <div class="event-card">
       <div class="event-card-content">
@@ -14,4 +14,18 @@
     </div>
   <% end %>
 </div>
+
+<div class="row hidden-sm hidden-md hidden-lg">
+  <% @events.each do |event| %>
+    <div class="event-card-xs">
+      <div class="event-card-content-xs">
+        <div class="event-other-card-item-xs" id="event-name-xs"><%= event.name.mb_chars.upcase.to_s %></div>
+        <div class="event-other-card-item-xs" id="event-date-xs"><%= event.date.mb_chars.upcase.to_s%></div>
+        <div class="event-other-card-item-xs" id="event-localisation-xs"><%= event.localisation.mb_chars.upcase.to_s%></div>
+        <div class="event-other-card-item-xs" id="event-information-xs"><%= event.information.mb_chars.upcase.to_s%></div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
 

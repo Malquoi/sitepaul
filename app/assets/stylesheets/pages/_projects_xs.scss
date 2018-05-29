@@ -11,7 +11,7 @@
   }
 
   .projects-top-xs {
-  height: 200px;
+  height: 220px;
   width: 320px;
   margin: auto;
   display: flex;
@@ -208,34 +208,7 @@
 
   }
 
-.projects-icons-container {
-  height: 4.5vh;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 5vh;
-  display: flex;
-  justify-content: center ;
-  //margin-top: 6vh;
-  //margin-bottom: 1vh;
-  //margin-bottom: 1vh;
-  //background: grey;
-}
 
-.projects-icons {
-display: flex;
-  justify-content: space-between;
-  //background: orange;
-}
 
-.projects-icons i {
-  color: $blackdp;
-  //opacity: 0.7;
-  margin: auto;
-  padding-left: 1.4vh;
-  padding-right: 1.4vh;
-}
 
-.events-icons i:hover {
-opacity: 0.4;
-}
 

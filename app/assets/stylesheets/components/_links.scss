@@ -21,6 +21,27 @@
 
 }
 
+.link-dropdown {
+  opacity: 1;
+  text-decoration: none;
+  justify-content: left;
+  font-size: 11px;
+  letter-spacing: 5.5px;
+  cursor: pointer;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+
+}
+
+.link-dropdown:hover {
+  opacity: 0.4;
+  text-decoration: none;
+  cursor: pointer;
+   transition: 0.4s;
+}
+
+
 .link-project {
   //color: $blackdp;
   text-decoration: none;

@@ -42,7 +42,7 @@
 
     <div class="skeleton-right text-center">
       <div class="link-border-container">
-        <div id="link-rotate-left"><%= link_to "- news -", breakings_path, class:"link-border"%></div>
+        <div id="link-rotate-left"><%= link_to "- news -", events_path, class:"link-border"%></div>
       </div>
     </div>
 
@@ -77,10 +77,15 @@
         <div class="hidden-box-xs hidden-sm hidden-md hidden-lg"></div>
           <%#= render 'shared/project_artworks_container' %>
         </div>
+         <div class= 'project-icons'>
+          <%= render 'shared/icons' %>
+        </div>
+
       </div>
     </div>
 
   </div>
+
 
 </div>
 

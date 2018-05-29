@@ -16,7 +16,6 @@
   <div class="skeleton-middle text-center" >
     <div class="events-banner">
       <div class="events-title hidden-xs"><p> - NEWS - </p></div>
-       <div class="events-title-xs hidden-sm hidden-md hidden-lg" ><p>- NEWS -</p></div>
        <div></div>
     </div>
     <div class="events text-center hidden-xs">
@@ -50,6 +49,39 @@
 </div>
 
 </div>
+
+<div class= "page hidden-sm hidden-md hidden-lg">
+
+  <%= render 'shared/navbar/navbar_events_xs' %>
+  <div class="skeleton-middle-xs text-center" >
+    <div class="events-content-xs text-center">
+      <div class="events-card-shadow-xs"></div>
+
+    <div class="events-banner-xs">
+       <div class="events-title-xs hidden-sm hidden-md hidden-lg" ><p>- NEWS -</p></div>
+       <div></div>
+    </div>
+    <div class="events-xs text-center hidden-sm hidden-md hidden-lg">
+      <div class="events-container-xs">
+        <div class="events-card-shadow"></div>
+        <% if @events = Event.where(category: 'last')%>
+          <%= render 'shared/events/events_presentation' %>
+        <% end%>
+        <% if @events = Event.where(category: 'other')%>
+          <%= render 'shared/events/events_presentation_other' %>
+        <% end %>
+      </div>
+    </div>
+
+
+
+ <%= render 'shared/icons' %>
+
+    </div>
+  </div>
+</div>
+
+
 
 
 
