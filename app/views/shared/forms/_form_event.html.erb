@@ -6,7 +6,7 @@
           <%= simple_form_for(@event) do |f| %>
             <div class="form-inputs">
               <%= f.select :category, Event::CATEGORIES, prompt: " Category ? " %>
-              <%= f.input :name %>
+              <%= f.input :name, as: :text, :input_html => {:style => 'width: 100%', :rows => 3} %>
               <%= f.input :date %>
               <%= f.input :localisation %>
               <%= f.input :information %>

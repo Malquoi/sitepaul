@@ -1,18 +1,19 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    display: flex;
+    background: blue;
+    margin: auto;
+    margin-right: 2vh;
+
 }
 
 .dropdown i{
     background-color: white;
-    //color: white;
-    //padding: 16px;
-    //font-size: 16px;
     border: none;
     cursor: pointer;
-    position: fixed;
-    top: 2.5vh;
-    right: 3vh;
+    margin: auto;
+
     border-decoration: none;
 }
 

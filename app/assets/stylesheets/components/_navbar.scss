@@ -1,7 +1,7 @@
 .navbar-xs {
   position: fixed;
   top: 0;
-  height: 9vh;
+  height: 10vh;
   //margin-bottom: 3vh;
   width: 100%;
   padding: 0px 0px;
@@ -19,30 +19,31 @@
 
 
 .navbar-left-xs {
-  width: 70%;
+  display: flex;
+  width: 20%;
+  //background: pink;
+  height: 10vh;
+}
+
+.navbar-center-xs {
+  width: 60%;
   //background: orange;
-  height: 15vh;
-  padding-left: 20px;
+  height: 10vh;
+  align-items: center;
+
 }
 
-.navbar-left-links {
-  margin-top: 5px;
-}
 
-.navbar-left-links a {
-  margin: 0px 5px;
-  color: green;
-}
 
 .home-icon {
   border:none;
-  position: absolute;
-  top: 2.5vh;
-  left: 4vh;
+  margin: auto;
+  margin-left: 2vh;
   opacity: 1;
   color:$blackdp;
   //height: 2vh;
   cursor:pointer;
+  //background: blue;
 }
 
 .home-icon i {
@@ -55,18 +56,16 @@
 
 
 .navbar-right-xs {
-  width: 30%;
-  height: 15vh;
+  display: flex;
+  width: 20%;
+  height: 10vh;
   //background: pink;
   z-index: 10;
-  align-items: center;
   display: flex;
-  align-items: right;
-  position: relative;
-  //justify-content: right;
 }
 
 
+/////////////////////
 
 
 .navbar {
@@ -95,6 +94,15 @@
   padding-left: 20px;
 }
 
+.navbar-left-links {
+  margin-top: 5px;
+}
+
+.navbar-left-links a {
+  margin: 0px 5px;
+  color: green;
+}
+
 .navbar-right {
   width: 30%;
   height: 4vh;
@@ -108,6 +116,5 @@
 }
 
 
-/////////////////////
 
 
