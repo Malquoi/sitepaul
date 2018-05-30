@@ -24,6 +24,9 @@
         <% if @events = Event.where(category: 'last')%>
           <%= render 'shared/events/events_presentation' %>
         <% end%>
+        <% if @events = Event.where(category: 'second')%>
+          <%= render 'shared/events/events_presentation_second' %>
+        <% end%>
         <% if @events = Event.where(category: 'other')%>
           <%= render 'shared/events/events_presentation_other' %>
         <% end %>
@@ -69,6 +72,9 @@
         <div class="events-card-shadow"></div>
         <% if @events = Event.where(category: 'last')%>
           <%= render 'shared/events/events_presentation' %>
+        <% end%>
+        <% if @events = Event.where(category: 'second')%>
+          <%= render 'shared/events/events_presentation_second' %>
         <% end%>
         <% if @events = Event.where(category: 'other')%>
           <%= render 'shared/events/events_presentation_other' %>

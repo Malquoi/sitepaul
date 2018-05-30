@@ -19,10 +19,11 @@
   <% @events.each do |event| %>
     <div class="event-card-xs">
       <div class="event-card-content-xs">
-        <div class="event-card-item-xs" id="event-name-xs"><%= event.name.mb_chars.upcase.to_s %></div>
-        <div class="event-card-item-xs" id="event-date-xs"><%= event.date.mb_chars.upcase.to_s%></div>
-        <div class="event-card-item-xs" id="event-localisation-xs"><%= event.localisation.mb_chars.upcase.to_s%></div>
-        <div class="event-card-item-xs" id="event-information-xs"><%= event.information.mb_chars.upcase.to_s%></div>
+        <div class="event-card-item-xs" id="event-card-item-xs-left"> <p id="event-name-xs"><%= event.name.mb_chars.upcase.to_s %></p></div>
+        <div class="event-card-item-xs" id="event-card-item-xs-right"> <p id="event-date-xs"><%= event.date.mb_chars.upcase.to_s%></p> </div>
+        <div class="event-card-item-xs" id="event-card-item-xs-left-small"> <p id="event-localisation-xs"><%= event.localisation.mb_chars.upcase.to_s%></p> </div>
+        <div class="event-card-item-xs" id="event-card-item-xs-right-small"> <p id="event-information-xs"><%= event.information.mb_chars.upcase.to_s%></p>  </div>
+        <div class="event-card-item-xs-priming"> <p id="event-priming-xs"> - </p></div>
       </div>
     </div>
   <% end %>

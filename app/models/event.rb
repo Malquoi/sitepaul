@@ -4,7 +4,7 @@ class Event < ApplicationRecord
    mount_uploader :photo, PhotoUploader
 
 
-   CATEGORIES =%w( last other )
+   CATEGORIES =%w( last second other )
 
   validates :category, inclusion: { in: CATEGORIES }, presence: true
   validates :name, presence: true

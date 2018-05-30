@@ -18,10 +18,35 @@
 
 
 .controls-xs {
-  height: 2vh;
+  height: 10vh;
+  width: 90%;
+  display: flex;
   //background-color: pink;
-  //margin-left: 25%;
-  width: 80%;
+  margin: auto;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-around;
+  overflow: hidden;
+  //text-align: left;
+  //letter-spacing: 3px;
+  opacity: 0.9;
+  //text-shadow: 0px 0.5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1;
+  font-weight: bold;
 
 }
+
+.controls-xs p {
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 7px;
+  font-weight: bold;
+  white-space:nowrap;
+   text-transform: uppercase;
+}
+
+
+
+
 

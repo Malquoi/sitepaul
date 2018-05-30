@@ -113,7 +113,7 @@
    //background-color: #eae9e4;
  //background-color:#f9e4f0;
 background-color:#eae9e4;
-color: #327c96;
+color: #da62b0;
 
 }
 
@@ -124,6 +124,25 @@ color: #327c96;
   margin-bottom: 8%;
   width: 100%;
   padding-left: 90%;
+
+}
+
+.event-second-card-item {
+  max-width: 100%;
+  box-sizing: border-box;
+
+  margin: auto;
+  //opacity: 0.8;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 35px;
+   //background-color: #eae9e4;
+ //background-color:#f9e4f0;
+background-color:#eae9e4;
+color: #327c96;
+
 
 }
 
@@ -218,7 +237,10 @@ opacity: 0.4;
 .events-content-xs {
   //position: fixed;
   //top: 10vh;
+
   overflow-y: auto;
+  overflow-x: hidden;
+
   //background: red;
 
 }
@@ -226,7 +248,7 @@ opacity: 0.4;
 .events-card-shadow-xs {
    width: 90%;
    margin: auto;
-   height: 20vh;
+   height: 10vh;
    //background-color:blue;
 }
 
@@ -282,12 +304,12 @@ opacity: 0.4;
   //padding-top: 6%;
   //padding-left: 4%;
   //padding-right: 4%;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 2px;
+  //border-style: solid;
+  //border-width: 1px;
+  //border-radius: 2px;
   box-shadow: none;
   //margin-top: 5vh;
-  margin-bottom: 6vh;
+  //margin-bottom: 4vh;
   //color: #eae9e4;
   //opacity: 0.7;
   //background-color:yellow;
@@ -323,16 +345,73 @@ opacity: 0.4;
   //display: flex;
   //justify-content: center;
   //flex-direction: column;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 5px;
    //background-color: #eae9e4;
  //background-color:#f9e4f0;
 background-color:#eae9e4;
-color: #327c96;
+
+color: #da62b0;
+
 
 }
+
+#event-card-item-xs-right {
+margin-right : 0;
+}
+
+#event-card-item-xs-left {
+margin-left: 0;
+}
+
+#event-card-item-xs-right-small {
+margin-right : 0;
+max-width: 90%;
+}
+
+#event-card-item-xs-left-small {
+margin-left: 0;
+max-width: 90%;
+}
+
+#event-other-card-item-xs-right {
+margin-right : 0;
+}
+
+#event-other-card-item-xs-left {
+margin-left: 0;
+}
+
+#event-other-card-item-xs-right-small {
+margin-right : 0;
+max-width: 90%;
+}
+
+#event-other-card-item-xs-left-small {
+margin-left: 0;
+max-width: 90%;
+}
+
+#event-second-card-item-xs-right {
+margin-right : 0;
+}
+
+#event-second-card-item-xs-left {
+margin-left: 0;
+}
+
+#event-second-card-item-xs-right-small {
+margin-right : 0;
+max-width: 90%;
+}
+
+#event-second-card-item-xs-left-small {
+margin-left: 0;
+max-width: 90%;
+}
+
 
 .event-other-card-item-xs {
   max-width: 100%;
@@ -344,12 +423,56 @@ color: #327c96;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
   background-color: #eae9e4;
+
 }
+
+.event-second-card-item-xs {
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  //opacity: 0.8;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  background-color: #eae9e4;
+  color: #327c96;
+}
+
+
+.event-card-item-xs-priming {
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  //opacity: 0.8;
+  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  background-color: #eae9e4
+}
+
+
+
+
+
+
+
 
 #event-name-xs {
   font-size: 12px;
@@ -368,13 +491,45 @@ color: #327c96;
   font-size: 9px;
   letter-spacing: 4.5px;
   font-weight: bold;
+
 }
 
 #event-information-xs {
   font-size: 9px;
   letter-spacing: 4.5px;
 
+
 }
+
+#event-priming-xs {
+  margin: auto;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  color: #da62b0;
+
+}
+
+#event-priming-xs-other {
+  margin: auto;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bold;
+
+}
+
+
+
+#event-priming-xs-second {
+  margin: auto;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  color: #327c96;
+
+}
+
+
 
 
 
