@@ -18,7 +18,7 @@
         <div class= 'projects-controls-row hidden-xs'>
           <div class= 'projects-controls-row-div'></div>
           <div class = 'projects-controls-row-div'>
-            <%= render 'shared/project/projects_controls' %>
+            <%= render 'shared/project/projects_vr_controls' %>
           </div>
         </div>
 
@@ -42,7 +42,7 @@
 
     <div class="skeleton-right text-center">
       <div class="link-border-container">
-        <div id="link-rotate-left"><%= link_to "- news -", events_path, class:"link-border"%></div>
+        <div id="link-rotate-left"><%= link_to "- EVENTS -", events_path, class:"link-border"%></div>
       </div>
     </div>
 
@@ -54,7 +54,7 @@
 <div class= "page hidden-sm hidden-md hidden-lg">
 
 
-<%#= render 'shared/navbar/navbar_project_vr_xs'%>
+<%= render 'shared/navbar/navbar_project_vr_xs'%>
 
   <div class="skeleton text-center">
 
@@ -63,7 +63,7 @@
 
         <div class= 'projects-controls-row hidden-sm hidden-md hidden-lg'>
           <div class = 'projects-controls-row-div-xs'>
-            <%#= render 'shared/projects_controls' %>
+            <%#= render 'shared/project/projects_vr_controls' %>
           </div>
         </div>
 
@@ -75,7 +75,7 @@
         </div>
         <div class="project-artworks-container-xs hidden-sm hidden-md hidden-lg ">
         <div class="hidden-box-xs hidden-sm hidden-md hidden-lg"></div>
-          <%#= render 'shared/project_artworks_container' %>
+          <%= render 'shared/project/project_artworks_container' %>
         </div>
          <div class= 'project-icons'>
           <%= render 'shared/icons' %>

@@ -36,8 +36,10 @@
   justify-content: space-around;
   align-items: center;
   opacity: 0.9;
+  margin-top: 5vh;
   //background: pink;
-  z-index: 5;
+  z-index: 1;
+  //margin-bottom: 5vh;
 
 }
 
@@ -57,28 +59,25 @@
 
   .title-vr-xs {
     margin: auto;
-    font-size: 14px;
-    letter-spacing: 7px;
+    font-size: 16px;
+    letter-spacing: 8px;
+    //font-weight: bold;
     opacity: 1;
+    margin: auto;
   }
 
   .projects-container-xs {
     width: 100%;
-    //position: fixed;
-    //top: 45%;
-    //bottom: 5%;
     margin: auto;
     overflow-y: auto;
     overflow-x: hidden;
-    //background: pink;
   }
 
   .projects-vr-container-xs {
-    position: fixed;
-    top: 20vh;
-    bottom: 2vh;
+    margin: auto;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 
   }
 
@@ -142,15 +141,22 @@
   z-index: 3;
   //padding-top: 3vh;
   //padding-bottom: 3vh;
-  background-image: asset-url('paulinevrxs.jpg');
+  background-image: asset-url('paulsitevrxs.jpg');
   background-size: cover;
   border-radius: 2px;
 
 }
 
-.project-card {
+.project-card-xs {
   //background: pink;
   margin: auto;
+   //margin-top: 5%;
+  //margin-bottom: 5%;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+
+  //width: 200px;
 }
 
 .project-vr-card-xs {
@@ -158,14 +164,24 @@
   justify-content: center;
   align-items: center;
   width: 55%;
-  padding: 0.25% 5%;
-
+  padding-left:  5%;
+  padding-bottom: 2%;
+  padding-top:1% ;
+  padding-right: 5%;
+  cursor: pointer;
   margin: 10%;
   background: white;
 
-  background: #dd85df;
+  //background: #dd85df;
+  background: #f10c5f;
   background: #d90812;
+
   border-radius: 1px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+.project-vr-card-xs:hover {
+  opacity: 0.7;
 }
 
   .projects-bottom-xs {
@@ -197,6 +213,7 @@
   //background-size: 60%;
   //margin-bottom: 1.2vh;
   margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 .title-bottom-xs {

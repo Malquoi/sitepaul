@@ -1,19 +1,27 @@
 
-<!--div class="dropdown" style="float:left;">
-  <i class="fa fa-bars dropdown-toggle"  data-toggle="dropdown"></i>
-  <div class="dropdown-content" >
-    <a><%#=link_to "Texts", texts_path, class: "link-dropdown"%></a>
-    <a><%#=link_to "EVENTS", events_path, class: "link-dropdown" %></a>
-    <a> <%#=link_to "about pauline", infos_path, class: "link-dropdown"%></a>
+
+
+<div class="navbar-xs hidden-sm hidden-md hidden-lg">
+  <div class="navbar-left-xs">
+    <div class= "home-icon" >
+      <%=link_to projects_path do%>
+        <i class="fas fa-home" style= "font-size:0.9em"></i>
+      <%end %>
+    </div>
   </div>
-</div-->
+
+  <div class="navbar-center-xs ">
 
 
- <div class="tabs">
+
+   </div>
+  <div class="navbar-right-xs ">
+
+    <div class="tabs">
 
     <div class="tab">
         <input type="radio" id="tab-3" name="tab-group-1">
-        <label for="tab-3"><i class="fa fa-bars" style= "font-size:1em"></i></label>
+        <label for="tab-3"><i class="fa fa-bars"></i></label>
         <div class="tab close-tab">
             <input type="radio" id="tab-close" name="tab-group-1">
         </div>
@@ -29,5 +37,5 @@
   </div>
 
 
-
-
+  </div>
+</div>

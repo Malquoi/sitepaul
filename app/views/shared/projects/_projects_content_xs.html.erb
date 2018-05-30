@@ -16,7 +16,7 @@
       <div class="row">
         <% @projects.each do |project| %>
           <div class="col-xs-12" id="col-xs-12-projects-xs">
-            <div class="project-card ">
+            <div class="project-card-xs ">
               <div id="project-path"><%= link_to project.name, project_path(project), class: "link-project-xs"%><span> </span><%= link_to project.name2, project_path(project), class: "link-project-xs"%>
               </div>
               <p>-</p>

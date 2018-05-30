@@ -1,29 +1,60 @@
-.dropdown {
+/* Click open/close Dropdown in pure CSS */
+
+/* Disclaimer: Not the most semantic
+   thing in the universe. */
+
+/* Forked from original idea
+   http://jsfiddle.net/paullferguson/Sv54G/3/ */
+
+.tabs {
     position: relative;
-    display: inline-block;
-    display: flex;
-    background: blue;
     margin: auto;
-    margin-right: 2vh;
-
+    //right: 1vh;
+    clear: both;
+    //margin: 50px;
+    //background-color: orange;
 }
-
-.dropdown i{
-    background-color: white;
-    border: none;
+.tab {
+    float: left;
+    position: relative;
+    //background-color: green;
+}
+.tab label {
+    //background: linear-gradient(#eee, #ccc);
+    //padding: 10px 30px;
     cursor: pointer;
-    margin: auto;
+    text-align: center;
+    display: block;
+    position: relative;
+    //top: 2vh;
+    //right: 1vh;
+    //background-color: red;
 
-    border-decoration: none;
+
 }
+.tab label i {
+  position: relative;
+  //right: 1vh;
 
-.dropdown-content {
-    display: none;
-    position: fixed;
-    top: 7%;
-    right: 8%;
-    background-color: white;
-    min-width: 160px;
+
+    //color: #aaa;
+}
+.tab [type=radio] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    z-index: 1;
+}
+.content {
+    position: absolute;
+    top: 4vh;
+    right: 2vh;
+    opacity: 0;
+    min-width: 200px;
     border-style: solid;
     border-radius: 1px;
     border-width: 1px;
@@ -32,28 +63,39 @@
     line-height: 150%;
     text-align: right;
     padding-right: 3%;
-    padding-left: 20%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-
+    padding-left: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #fdfdfd;
 }
 
-.dropdown-content a {
-    color: black;
+.content a {
     text-decoration: none;
     display: block;
-
+}
+[type=radio]:checked ~ label {
+    z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+    opacity: 1;
 }
 
-.dropdown-content a:hover {background-color: transparent}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.close-tab {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.close-tab label {
+    background: #333;
+    color: white;
+}
+[type=radio]:checked ~ label ~ .close-tab {
+    z-index: 3;
 }
 
-.dropdown:hover i {
-    background-color: transparent;
-    border: none;
 
-}
 
