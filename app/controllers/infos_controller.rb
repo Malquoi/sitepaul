@@ -3,7 +3,7 @@ class InfosController < ApplicationController
 
 skip_before_action :authenticate_user!, only: [:index]
 
-before_action :set_info, only: [:edit, :show, :update, :destroy]
+before_action :set_info, only: [:edit, :update, :destroy]
 
 
   def index
@@ -30,6 +30,8 @@ before_action :set_info, only: [:edit, :show, :update, :destroy]
 
 
 
+
+
   def update
      @info.update(info_params)
     redirect_to infos_path
@@ -47,7 +49,7 @@ before_action :set_info, only: [:edit, :show, :update, :destroy]
   private
 
   def set_info
-    @infot = Info.find(params[:id])
+    @info = Info.find(params[:id])
   end
 
 

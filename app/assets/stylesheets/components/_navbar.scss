@@ -11,7 +11,7 @@
   color: $blackdp;
   background: #fdfdfd;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  //background-color: yellow;
+  background-color: transparent;
   margin-bottom: 1vh;
 
 }
@@ -38,7 +38,7 @@
 .home-icon {
   border:none;
   margin: auto;
-  margin-left: 2vh;
+  margin-left: 4vh;
   opacity: 1;
   color:$blackdp;
   //height: 2vh;
@@ -119,5 +119,21 @@
 /////////////////////////////////
 
 
+.navbar-title-xs {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-top: 2.5vh;
+  font-weight: bold;
+  justify-content: space-around;
+  margin: auto;
+  padding-left: 2px;
+}
+
+.navbar-title-xs p {
+  font-size: 14px;
+  letter-spacing: 7px;
+  //opacity: 0.9;
+}
 
 

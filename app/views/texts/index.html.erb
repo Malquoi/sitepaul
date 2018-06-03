@@ -1,4 +1,9 @@
-<%= render 'shared/navbar/navbar_texts' %>
+<div class="page hidden-xs">
+
+  <%= render 'shared/navbar/navbar' %>
+
+
+
 
 
 <div class="skeleton text-center">
@@ -8,7 +13,7 @@
     <p id="link-rotate-right">
 
       <% if current_user %>
-      <%= link_to "- back -", events_path, class:"link-border" %>
+      <%= link_to "- back -", infos_path, class:"link-border" %>
       <% else %>
       <%= link_to "- back -", request.referer.present? ? request.referer : default_path,  class:"link-border" %>
       <% end %>
@@ -25,7 +30,7 @@
           <p></p>
           <p>- TEXTS -</p>
       </div>
-      <div class="texts-container">
+      <div class="texts-container hidden-xs hidden-sm ">
         <div class="row">
           <% @texts.each do |text| %>
             <% if current_user %>
@@ -33,7 +38,7 @@
             <% end %>
             <div class="text-card hidden-xs hidden-sm">
               <div></div>
-              <div id="text-author-top"> <span>by</span> <span></span><%= text.author%></div>
+              <div class="text-author-top hidden-xs hidden-sm"> <span>by</span> <span></span><%= text.author%></div>
               <div class="text-content hidden-xs hidden-sm"> <%= simple_format(text.content, class: 'text-content hidden-xs hidden-sm ')%></div>
               <div class="text-author hidden-xs hidden-sm"><%= simple_format(text.author, class: 'text-author hidden-xs hidden-sm')%></div>
                <div class="text-presentation-author hidden-xs hidden-sm"><%= simple_format(text.presentation_author, class: 'text-presentation-author hidden-sm') %></div>
@@ -44,24 +49,63 @@
       </div>
     </div>
 
-    <div class="texts-xs text-center hidden-md hidden-lg">
+    <div class="texts-sm text-center hidden-xs hidden-md hidden-lg">
 
-      <div class="texts-banner-xs text-center hidden-md hidden-lg">
+      <div class="texts-banner-sm text-center hidden-xs hidden-md hidden-lg">
           <p></p>
           <p>|TEXTS</p>
       </div>
-      <div class="texts-container">
+      <div class="texts-container-sm hidden-xs hidden-md hidden-lg">
         <div class="row">
           <% @texts.each do |text| %>
             <% if current_user %>
               <p><%= link_to "delete", text_path(text), method: :delete, class:"link"%>   <span></span><span>|</span><span></span>   <%= link_to "update", edit_text_path(text), class:"link"%></p>
             <% end %>
-            <div class="text-card-xs hidden-md hidden-lg ">
+            <div class="text-card-sm hidden-xs hidden-md hidden-lg ">
               <div></div>
-              <div id="text-author-top"> <span>by</span> <span></span><%= text.author%></div>
-              <div class="text-content-xs hidden-md hidden-lg "> <%= simple_format(text.content, class: 'text-content-xs hidden-md hidden-l')%></div>
-              <div class="text-author-xs hidden-md hidden-lg"><%= simple_format(text.author, class: 'text-author-xs hidden-md hidden-l')%></div>
-               <div class="text-presentation-author-xs hidden-md hidden-lg "><%= simple_format(text.presentation_author, class: 'text-presentation-author-xs hidden-md hidden-l') %></div>
+              <div class="text-author-top"> <span>by</span> <span></span><%= text.author%></div>
+              <div class="text-content-sm hidden-xs hidden-md hidden-lg "> <%= simple_format(text.content, class: 'text-content-sm hidden-xs hidden-md hidden-lg')%></div>
+              <div class="text-author-sm hidden-xs hidden-md hidden-lg"><%= simple_format(text.author, class: 'text-author-sm hidden-xs hidden-md hidden-lg')%></div>
+               <div class="text-presentation-author-sm hidden-xs hidden-md hidden-lg "><%= simple_format(text.presentation_author, class: 'text-presentation-author-sm hidden-xs hidden-md hidden-lg') %></div>
+              <p> - </p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skeleton-right text-center">
+    <p></p>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="page_xs hidden-sm hidden-md hidden-lg">
+
+
+<%= render 'shared/navbar/navbar_texts_xs' %>
+
+
+<div class="skeleton text-center">
+
+
+  <div class="skeleton-middle-xs text-center">
+
+    <div class="texts-xs text-center  hidden-sm hidden-md hidden-lg ">
+      <div class="texts-container-xs">
+        <div class="row">
+          <% @texts.each do |text| %>
+            <div class="text-card-xs hidden-sm hidden-md hidden-lg ">
+              <div></div>
+              <div class="text-author-top-xs"> <span>by</span> <span></span><%= text.author%></div>
+              <div class="text-content-xs hidden-sm hidden-md hidden-lg "> <%= simple_format(text.content, class: 'text-content-xs hidden-sm hidden-md hidden-lg  ')%></div>
+              <div class="text-author-xs hidden-sm hidden-md hidden-lg "><%= simple_format(text.author, class: 'text-author-xs hidden-sm hidden-md hidden-lg ')%></div>
+               <div class="text-presentation-author-xs hidden-sm hidden-md hidden-lg "><%= simple_format(text.presentation_author, class: 'text-presentation-author-xs hidden-sm hidden-md hidden-lg ') %></div>
               <p> - </p>
             </div>
           <% end %>
@@ -71,25 +115,8 @@
 
 
 
-
-
-
-
-
-
-
-
   </div>
 
-
-
-
-
-
-
-
-  <div class="skeleton-right text-center">
-    <p></p>
-  </div>
+</div>
 
 </div>

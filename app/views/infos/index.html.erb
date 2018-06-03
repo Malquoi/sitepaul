@@ -39,22 +39,26 @@
 
 
       <div class="info-container">
+
         <div class="info-hidden-box"></div>
-        <div class="carousel-infos-titles-xs-sm-md hidden-lg">
-          <%= render 'shared/carousel/carousel_infos_titles' %>
-        </div>
-        <div class="carousel-infos-titles hidden-xs hidden-sm hidden-md">
-          <%= render 'shared/carousel/carousel_infos_titles' %>
-        </div>
-        <div class="info-content">
-          <div class="row">
-            <div class= "col-xs-12">
-              <%= render 'shared/carousel/carousel_infos' %>
+        <div class="carousel-infos-container">
+          <div class="carousel-infos-border">
+          <div class="carousel-infos-titles hidden-xs hidden-sm hidden-md">
+            <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left" style= "font-size:1.8em" id = "button-title-left"></i></a><%= render 'shared/carousel/carousel_infos_titles' %><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right" style= "font-size:1.8em" id = "button-title-right"></i></a>
+          </div>
+          <div class="infos-content">
+            <div class="row">
+
+                <%= render 'shared/carousel/carousel_infos' %>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      </div>
+
+  </div>
 
 
 
@@ -65,7 +69,3 @@
   </div>
 
 </div>
-
-
-
-

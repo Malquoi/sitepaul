@@ -1,4 +1,6 @@
-
+.body {
+  background: #fdfdfd;
+}
 .skeleton {
   display: flex;
 //background-color : grey;
@@ -7,7 +9,8 @@
   //text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
   font-weight: lighter;
   letter-spacing: 3px;
-  background: #fdfdfd;
+  //background: #fdfdfd;
+  background: white;
 
 
   cursor: crosshair;
@@ -66,6 +69,17 @@
   overflow-y: auto;
   overflow-x: hidden;
   //background: green;
+}
+
+.skeleton-middle-infos-xs {
+  width:100%;
+  position: fixed;
+  top: 30vh;
+  text-transform: uppercase;
+  margin:auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: green;
 }
 
 

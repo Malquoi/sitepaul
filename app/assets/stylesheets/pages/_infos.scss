@@ -1,11 +1,12 @@
 .infos-tools {
   display: flex;
   justify-content: space-between;
+  //background: pink;
 
 }
 
 .infos-tools-div {
-  margin-top: 1vh;
+  //margin-top: 1vh;
   height: 5vh;
   //background-color: green;
   width: 40%;
@@ -25,14 +26,12 @@
    display: flex;
    justify-content: space-between;
   width: 10vh;
-  //background-color: #eae9e4;
-  //margin-left: 65%;
-  //margin-top: 4vh;
 }
 
-//.controls-top-xs-sm i {
-  //padding-right: 5%;
-//
+
+
+
+
 
 #carousel-inner-top {
   height:5vh;
@@ -49,6 +48,7 @@
   //height: 20%;
   font-size: 11px;
   letter-spacing: 5.5px;
+  font-weight: bold;
   //padding-bottom: 10%;
   padding-top: 2%;
   //margin-top: 5%;
@@ -56,10 +56,19 @@
 }
 
 .pauline-presentation {
-  margin-top: 22vh;
+  margin: auto;
+  display: block;
+  margin-top: 10vh;
   margin-bottom:10vh;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  text-align: center;
+   background-image: asset-url('300.jpg');
+ background-position: top 10% right 45%,;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  //background: pink;
+  width: 86vh;
 }
 .pauline-presentation p {
 
@@ -68,15 +77,16 @@
 
 }
 #pauline-name {
-  font-size: 22px;
-  letter-spacing: 16px;
-  //padding-right: 10px;
+  margin: auto;
+  font-size: 24px;
+  letter-spacing: 17px;
+  padding-right: 8px;
   //background-color: pink;
 }
 #pauline-cities {
   font-size: 14px;
   letter-spacing: 8px;
-  padding-right: 11px;
+  padding-right: 18px;
   margin-top: 20px;
 }
 #pauline-cursus {
@@ -113,19 +123,16 @@ padding-left: 10%;
 padding-right: 10%;
 }
 
-.info-content {
-  background: white;
-}
+
 
 .info-container {
   display: block;
   align-items: center;
   justify-content: space-around;
-  height: 80%;
   overflow: auto;
   position: absolute;
-  top: 20%;
-  bottom: 5%;
+  top: 17%;
+  bottom: 3%;
   width: 80%;
   //padding-left: 2%;
   //padding-right: 2%;
@@ -134,25 +141,68 @@ padding-right: 10%;
 }
 
 .info-hidden-box {
-  height: 75%;
+  height: 76%;
   background-color: transparent;
-  //background-color: green;
+
+}
+
+.carousel-infos-container {
+
+   background-color: white;
+  display: block;
+  justify-content: space-around;
+  //background: fuchsia;
+}
+
+.carousel-infos-border {
+  display: block;
+  margin: auto;
+  width: 86vh;
+  justify-content: space-around;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1px;
+  background-color:#eae9e4;
+
 }
 
 
 
-
-
 .carousel-infos-titles {
-  height: 25%;
-  background-color: white;
+  height: 20vh;
+  width: 70vh;
+  margin:auto;
   display: flex;
   justify-content: space-around;
   //box-sizing: border-box;
   //white-space: pre-wrap;
   white-space: normal;
+  background: white;
+  //background: yellow;
+  position: relative;
+  background-color:#eae9e4;
+}
+
+.carousel-infos-titles a {
+
+  margin-top: 12%;
+  //background: blue;
+}
+
+#button-title-left {
+  padding-left: 5vh;
+
 
 }
+
+#button-title-right {
+padding-right: 5vh;
+}
+
+
+
+
 
 .carousel-infos-titles-xs-sm-md {
   height: 30%;
@@ -166,31 +216,32 @@ padding-right: 10%;
 
 
 .infos-title {
-  //box-sizing: border-box;
-  height: 25%;
-  width: 75%;
-  margin: auto;
-  letter-spacing: 6px;
-  padding-bottom: 10%;
-  margin: auto;
-  padding-top: 8%;
-  margin-top: 3%;
-  background-color:#eae9e4;
-  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
   border-radius: 2px;
-  //background-color:#da78b7;
+  height: 10vh;
+  width: 50vh;
+  padding: 10px 10px;
+  //box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background-color:#eae9e4;
+  position: relative;
+  margin-top: 10%;
+
+
 }
 
 
 .infos-title p {
-  padding-top: 5px;
-  margin: auto;
-  font-size: 18px;
-  letter-spacing: 12px;
-  padding-left: 7%;
-  padding-right: 5%;
-  padding-top: 1%;
-  //background-color:orange;
+
+  font-size: 19px;
+  letter-spacing: 9.5px;
+  font-weight: 500;
+  //padding-top: 3vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //padding-left: 4%;
+
 
 
 }
@@ -199,8 +250,7 @@ padding-right: 10%;
   font-size: 15px;
   letter-spacing: 10px;
   padding-top: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
+  //padding-left: 5px;
 }
 
 .infos-title-xs-sm-md {
@@ -215,7 +265,7 @@ padding-right: 10%;
   padding-right:10%;
   padding-top: 8%;
   margin-top: 3%;
-  background-color:#eae9e4;
+  background-color:white;
   //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
@@ -224,56 +274,90 @@ padding-right: 10%;
 
 
 .carousel-inner {
-  height:60vh;
-  width: 85vh;
-  //padding-left: 10vh;
-  //padding-right: 10vh;
-
+  margin: auto;
+  height:58vh;
+  width: 70vh;
   overflow: auto;
-  background-color: #eae9e4 ;
+  background-color: white;
   border-radius: 2px;
-  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  //background-color: orange;
+
+
+
 }
+
+#carousel-inner-titles {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  height: 100%;
+
+  margin:auto;
+  width: 50vh;
+  background-color:#eae9e4;
+  overflow: hidden;
+
+
+
+
+}
+
+
+.infos-container {
+  margin: auto;
+}
+
+
+
+
 
 
 .infos{
   box-sizing: border-box;
   min-height:90vh;
-  width: 75%;
+  width: 100%;
   margin: auto;
-  background-color:#eae9e4;
-  padding-top: 2%;
+  background-color:white;
+  //padding-top: 5vh;
   padding-left: 5%;
 
   padding-right: 5%;
   padding-bottom: 4%;
-  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  //border-radius: 3px;
-  //background-color: pink;
+  background-color:#eae9e4;
+
+
+
 
 }
+
+
+
+
+
 
 
 #info-name {
   font-size: 13px;
+
+
+
 }
 
 #info-localisation {
   font-size: 11px;
+
+
 }
 
 #info-date {
   font-size: 9px;
+
+
 }
 
 #info-commentary {
   font-size: 10px;
+
+
+
 }
-
-
-
-
-
-
 
