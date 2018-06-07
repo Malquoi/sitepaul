@@ -1,21 +1,28 @@
 .events-banner {
-  height: 10vh;
+  margin: auto;
+  position: fixed;
+  top: 75px;
+  left: 10%;
+  height: 14%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fdfdfd;
   //background-color: orange;
   padding-left: 9%;
   padding-right: 9%;
-  margin-bottom: 3vh;
+  margin-bottom: 3%;
 }
 
 .events-title {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 4vh;
+  margin-bottom: 5%;
   padding: 10px 35px;
   background-color:#eae9e4;
+  border-radius: 1px;
 }
 
 
@@ -36,9 +43,8 @@
 .events-container {
   display: block;
   text-align: center;
-  height: 75vh;
-  overflow: auto;
-  width: 88%;
+  height: 75%;
+  width: 80%;
   margin: auto;
   //background-color:yellow;
 }
@@ -46,10 +52,9 @@
 
 
 .events-card-shadow {
-   width: 90%;
-   margin: auto;
-   height: 3vh;
-   //background-color:yellow;
+   width: 100%;
+   height: 20vh;
+   //background-color:blue;
 }
 
 .event-card {
@@ -67,10 +72,10 @@
   border-radius: 2px;
   box-shadow: none;
   //margin-top: 5vh;
-  margin-bottom: 16vh;
+  margin-bottom: 13%;
   //color: #eae9e4;
   //opacity: 0.7;
-  //background-color:yellow;
+  //background-color:green;
 }
 
 
@@ -90,7 +95,7 @@
   //background-color: #ea2283;
   //color: #ea2283;
   //background-image: asset-url('paulinevr.jpg');
-  background-color: white;
+  background-color: #fdfdfd;
   //color: #f06d45;
   //background-color: #0e1421;
   //color: #0e1421;

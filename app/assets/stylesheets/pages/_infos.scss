@@ -502,8 +502,8 @@ margin: auto;
   background-size: cover;
   margin-bottom: 1vh;
   z-index: 10;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 8%;
+  margin-bottom: 8%;
   //background-color: pink;
   //padding-bottom: 10%;
 
@@ -522,8 +522,8 @@ margin: auto;
 }
 
 #pauline-cities-xs {
-  font-size: 12px;
-  letter-spacing: 6px;
+  font-size: 13px;
+  letter-spacing: 6.5px;
   margin-top: 30px;
   padding-right: 6.5vh;
 
@@ -542,7 +542,7 @@ margin-top: 30px;
   //border-radius: 2px;
   //border-width: 1px;
   margin: auto;
-  margin-top: 30%;
+  margin-top: 15%;
   line-height: 100%;
 }
 
@@ -559,11 +559,12 @@ margin-top: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
+  border-radius: 2px;
 }
 
 .infos-presentation-title-xs p {
   margin: auto;
-  width: 96%;
+  //width: 96%;
 }
 
 #infos-presentation-title-sceno-xs {
@@ -581,13 +582,19 @@ margin-top: 30px;
 .info-card-xs {
   margin: auto;
   margin-bottom: 20px;
-  width: 80%;
+  width: 84%;
+  display: block;
+  text-align: center;
 }
 
 
 #info-name-xs {
+  margin: auto;
+  text-align: center;
   font-size: 10px;
   letter-spacing: 5px;
+  font-weight: bold;
+
 
 
 
@@ -596,6 +603,8 @@ margin-top: 30px;
 #info-localisation-xs {
   font-size: 9px;
   letter-spacing: 4.5px;
+  margin: auto;
+  text-align: center;
 
 
 }
@@ -603,6 +612,8 @@ margin-top: 30px;
 #info-date-xs {
   font-size: 9px;
    letter-spacing: 4.5px;
+    margin: auto;
+  text-align: center;
 
 
 
@@ -611,6 +622,8 @@ margin-top: 30px;
 #info-commentary-xs {
   font-size: 9px;
    letter-spacing: 4.5px;
+    margin: auto;
+  text-align: center;
 
 
 
