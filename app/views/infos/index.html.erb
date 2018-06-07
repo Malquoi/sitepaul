@@ -1,71 +1,143 @@
-<%= render 'shared/navbar/navbar' %>
 
-<div class="skeleton text-center">
+<div class="page hidden-xs">
 
-  <div class="skeleton-left text-center">
-    <div class="link-border-container">
-    <p id="link-rotate-right"> <%= link_to "- home -", projects_path,  class:"link-border" %> </p>
+
+  <%= render 'shared/navbar/navbar' %>
+
+  <div class="skeleton text-center">
+
+    <div class="skeleton-left text-center">
+      <div class="link-border-container">
+      <p id="link-rotate-right"> <%= link_to "- home -", projects_path,  class:"link-border" %> </p>
+    </div>
+    </div>
+
+
+    <div class="skeleton-middle text-center">
+      <div class= "infos-page">
+
+        <div class="infos-presentation-title hidden-xs hidden-sm hidden-md" id="infos-presentation-title-top">
+              <p>- EXPOSITIONS -</p>
+              <p>- SCÉNOGRAPHIES &... -</p>
+              <p>- RÉSIDENCES -</p>
+
+        </div>
+
+
+      <div class="pauline-presentation hidden-xs hidden-sm">
+
+          <p id="pauline-name">PAULINE | DUFOUR</p>
+          <p id="pauline-cities">NANTES - PARIS</p>
+          <p id="pauline-cursus">DIPLÔMÉE DE LA HAUTE ÉCOLE DES ARTS DU RHIN (ESADS/HEAR) </p>
+      </div>
+
+
+
+        <div class="infos-presentation-title" id="infos-presentation-title-bottom">
+
+            <p>- ENSEIGNEMENT -</p>
+            <p>- PRIX, BOURSES &... -</p>
+            <p>- MÉDIAS &... -</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="skeleton-right text-center">
+      <div class="link-border-container">
+        <p id="link-rotate-left"><%=link_to "- TEXTS -", texts_path, class: "link-border"%></p>
+      </div>
+    </div>
+
   </div>
+
+
+</div>
+
+
+
+<div class="page hidden-sm hidden-md hidden-lg">
+
+  <%= render 'shared/navbar/navbar_vr_xs' %>
+
+  <div class="skeleton-middle-xs text-center">
+    <div class="infos-block-hidden"></div>
+
+      <div class="pauline-presentation-xs hidden-sm hidden-md hidden-lg">
+
+        <p id="pauline-name-xs">PAULINE | DUFOUR</p>
+        <p id="pauline-cities-xs">NANTES - PARIS</p>
+        <p id="pauline-cursus-xs">DIPLÔMÉE DE LA HAUTE ÉCOLE DES ARTS DU RHIN (ESADS/HEAR) </p>
+      </div>
+
+      <%= render 'shared/infos/infos_container_xs' %>
+
   </div>
 
+</div>
 
-  <div class="skeleton-middle text-center">
-    <div class= "infos-tools">
+
+<!--div class= "infos-tools">
       <div class="events-tools-div hidden-xs"></div>
       <div class="infos-tools-div hidden-xs">
       <div class="controls-top hidden-xs hidden-sm">
-        <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left"></i></a><%= render 'shared/carousel/carousel_infos_titles2' %><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right"></i></a>
+        <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left"></i></a><%#= render 'shared/carousel/carousel_infos_titles2' %><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right"></i></a>
       </div>
 
       <div class="controls-top-xs-sm  hidden-md hidden-lg">
         <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left"></i></a><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right"></i></a>
       </div>
     </div>
-    </div>
-
-        <div class="pauline-presentation hidden-xs hidden-sm">
-
-        <p id="pauline-name">PAULINE | DUFOUR</p>
-        <p id="pauline-cities">NANTES - PARIS</p>
-        <p id="pauline-cursus">DIPLÔMÉE DE LA HAUTE ÉCOLE DES ARTS DU RHIN (ESADS/HEAR) </p>
-      </div>
-
-       <div class="pauline-presentation-xs-sm hidden-md hidden-lg">
-
-        <p id="pauline-name-xs-sm">PAULINE | DUFOUR</p>
-        <p id="pauline-cities-xs-sm">NANTES - PARIS</p>
-        <p id="pauline-cursus-xs-sm">DIPLÔMÉE DE LA HAUTE ÉCOLE DES ARTS DU RHIN (ESADS/HEAR) </p>
-      </div>
+    </div-->
 
 
-      <div class="info-container">
+      <!--div class="info-container">
 
         <div class="info-hidden-box"></div>
         <div class="carousel-infos-container">
           <div class="carousel-infos-border">
           <div class="carousel-infos-titles hidden-xs hidden-sm hidden-md">
-            <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left" style= "font-size:1.8em" id = "button-title-left"></i></a><%= render 'shared/carousel/carousel_infos_titles' %><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right" style= "font-size:1.8em" id = "button-title-right"></i></a>
+            <a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="prev"><i class="fa fa-caret-left" style= "font-size:2em" id = "button-title-left"></i></a><%#= render 'shared/carousel/carousel_infos_titles' %><a class="btn-floating" href="[id^=carousel-example-generic]" data-slide="next"><i class="fa fa-caret-right" style= "font-size:2em" id = "button-title-right"></i></a>
           </div>
           <div class="infos-content">
             <div class="row">
-
-                <%= render 'shared/carousel/carousel_infos' %>
-
+              <div class= "col-xs-12">
+                <%#= render 'shared/carousel/carousel_infos' %>
             </div>
           </div>
         </div>
       </div>
+      </div>
+
+    </div-->
+
+   <!--div class="infos-presentation-container-border">
+    <!--div class="infos-presentation-container">
+
+      <div class="row">
+        <div class="col-lg-4 ">
+          <div class="infos-presentation-title hidden-xs hidden-sm hidden-md">
+            <p>- EXPOSITIONS -</p>
+
+
+
+          </div>
+           </div>
+            <div class="col-lg-4 ">
+          <div class="infos-presentation-title hidden-xs hidden-sm hidden-md">
+             <p>- SCÉNOGRAPHIES &... -</p>
+              <!--h5> _ </h5
+          </div>
+           </div>
+          <div class="col-lg-4 ">
+          <div class="infos-presentation-title hidden-xs hidden-sm hidden-md">
+             <p>- RÉSIDENCES -</p>
+            <!--h5> _ </h5
+          </div>
+           </div>
+
 
       </div>
 
-  </div>
-
-
-
-  <div class="skeleton-right text-center">
-    <div class="link-border-container">
-    <p id="link-rotate-left"><%=link_to "- TEXTS -", texts_path, class: "link-border-text"%></p>
-  </div>
-  </div>
-
-</div>
+      </div-->

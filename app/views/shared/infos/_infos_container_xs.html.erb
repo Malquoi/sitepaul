@@ -1,0 +1,67 @@
+<div class="infos-container-xs">
+
+    <div class="infos-presentation-xs">
+      <div class="infos-presentation-title-xs">
+            <p>- EXPOSITIONS -</p>
+      </div>
+      <div class="infos-content-xs">
+        <% @infos= Info.where(category: "SHOWING") %>
+        <%= render 'shared/infos/infos_category_content_xs' %>
+
+      </div>
+    </div>
+
+    <div class="infos-presentation-xs">
+      <div class="infos-presentation-title-xs">
+            <p>- RÉSIDENCES -</p>
+      </div>
+      <div class="infos-content-xs">
+        <% @infos= Info.where(category: "RESIDENCE") %>
+        <%= render 'shared/infos/infos_category_content_xs' %>
+      </div>
+    </div>
+
+     <div class="infos-presentation-xs">
+      <div class="infos-presentation-title-xs">
+           <p>- ENSEIGNEMENT -</p>
+      </div>
+      <div class="infos-content-xs">
+        <% @infos= Info.where(category: "TEACHING") %>
+        <%= render 'shared/infos/infos_category_content_xs' %>
+      </div>
+    </div>
+
+    <div class="infos-presentation-xs">
+      <div class="infos-presentation-title-xs">
+           <p>- SCÉNOGRAPHIES & INSTALLATIONS -</p>
+      </div>
+      <div class="infos-content-xs">
+        <% @infos= Info.where(category: "SCENOGRAPHY") %>
+        <%= render 'shared/infos/infos_category_content_xs' %>
+      </div>
+    </div>
+
+     <div class="infos-presentation-xs">
+      <div class="infos-presentation-title-xs">
+             <p>- PRIX, BOURSES & WORKSHOTS -</p>
+      </div>
+      <div class="infos-content-xs">
+        <% @infos= Info.where(category: "PRIZE") %>
+        <%= render 'shared/infos/infos_category_content_xs' %>
+      </div>
+    </div>
+
+     <div class="infos-presentation-xs">
+      <div class="infos-presentation-title-xs">
+             <p>- MÉDIAS -</p>
+      </div>
+      <div class="infos-content-xs">
+        <% @infos= Info.where(category: "MEDIA") %>
+        <%= render 'shared/infos/infos_category_content_xs' %>
+      </div>
+    </div>
+
+
+</div>
+
+

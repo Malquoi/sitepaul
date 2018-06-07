@@ -11,6 +11,8 @@
   letter-spacing: 3px;
   //background: #fdfdfd;
   background: white;
+  //overflow-y: auto;
+  //overflow-x: hidden;
 
 
   cursor: crosshair;
@@ -33,10 +35,10 @@
   100% { opacity: 1; }
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
+//::-webkit-scrollbar {
+    //width: 0px;
+    //background: transparent; /* make scrollbar transparent */
+//}
 
 
 .skeleton-left {

@@ -1,9 +1,8 @@
 <div class="page hidden-xs">
 
 
-  <div class= "row">
+
     <% @infos.each do |info| %>
-    <div class= 'col-12'>
       <% if current_user %>
        <p><%= link_to "delete |", info_path(info), method: :delete, class:"link"%> <%= link_to " update", edit_info_path(info), class:"link"%></p>
       <% end %></p>
@@ -12,14 +11,11 @@
       <p id="info-date"><%= info.date%></p>
       <p id="info-commentary"><%= info.commentary%></p>
       <p> _ </p>
-    </div>
+
 
     <% end %>
 
+
+
+
 </div>
-
-
-</div>
-
-
-
