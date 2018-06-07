@@ -2,7 +2,8 @@
 
     <div class="infos-presentation-xs">
       <div class="infos-presentation-title-xs">
-            <p>- EXPOSITIONS -</p>
+         <p>-</p><p>EXPOSITIONS </p><p>-</p>
+
       </div>
       <div class="infos-content-xs">
         <% @infos= Info.where(category: "SHOWING") %>
@@ -13,7 +14,7 @@
 
     <div class="infos-presentation-xs">
       <div class="infos-presentation-title-xs">
-            <p>- RÉSIDENCES -</p>
+        <p>-</p><p>RÉSIDENCES </p><p>-</p>
       </div>
       <div class="infos-content-xs">
         <% @infos= Info.where(category: "RESIDENCE") %>
@@ -23,7 +24,7 @@
 
      <div class="infos-presentation-xs">
       <div class="infos-presentation-title-xs">
-           <p>- ENSEIGNEMENT -</p>
+        <p>-</p><p>ENSEIGNEMENT</p><p>-</p>
       </div>
       <div class="infos-content-xs">
         <% @infos= Info.where(category: "TEACHING") %>
@@ -32,8 +33,8 @@
     </div>
 
     <div class="infos-presentation-xs">
-      <div class="infos-presentation-title-xs">
-           <p>- SCÉNOGRAPHIES & INSTALLATIONS -</p>
+      <div class="infos-presentation-title-xs" id="infos-presentation-title-sceno-xs">
+           <p>-</p><p>SCÉNOGRAPHIES & INSTALLATIONS</p><p>-</p>
       </div>
       <div class="infos-content-xs">
         <% @infos= Info.where(category: "SCENOGRAPHY") %>
@@ -42,8 +43,8 @@
     </div>
 
      <div class="infos-presentation-xs">
-      <div class="infos-presentation-title-xs">
-             <p>- PRIX, BOURSES & WORKSHOTS -</p>
+      <div class="infos-presentation-title-xs" >
+             <p>- PRIX & BOURSES -</p>
       </div>
       <div class="infos-content-xs">
         <% @infos= Info.where(category: "PRIZE") %>
@@ -53,7 +54,7 @@
 
      <div class="infos-presentation-xs">
       <div class="infos-presentation-title-xs">
-             <p>- MÉDIAS -</p>
+        <p>-</p><p>MÉDIAS</p><p>-</p>
       </div>
       <div class="infos-content-xs">
         <% @infos= Info.where(category: "MEDIA") %>

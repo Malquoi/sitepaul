@@ -497,7 +497,7 @@ margin: auto;
   align-items: center;
 
   background-image: asset-url('300.jpg');
-  background-position: top 0% right 2%;
+  background-position: top 0% left 5%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 1vh;
@@ -543,30 +543,45 @@ margin-top: 30px;
   //border-width: 1px;
   margin: auto;
   margin-top: 30%;
-  line-height: 50%;
+  line-height: 100%;
 }
 
 .infos-presentation-title-xs {
-  display: flex;
   text-align: center;
   font-size: 14px;
   letter-spacing: 7px;
-  width: 80%;
-  height: 30px;
+  width: 92%;
+  //height: 30px;
   margin: auto;
   font-weight: bold;
   background-color:#eae9e4;
   margin-bottom: 30px;
-
-
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
 }
 
 .infos-presentation-title-xs p {
   margin: auto;
+  width: 96%;
 }
 
+#infos-presentation-title-sceno-xs {
+  width: 96%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
 .info-card-xs {
+  margin: auto;
   margin-bottom: 20px;
+  width: 80%;
 }
 
 
