@@ -8,7 +8,7 @@ before_action :set_project, only: [:show, :edit, :update, :destroy, :showvr, :la
 
 def index
 
-  @projects = Project.where.all
+  @projects = Project.all
 
 end
 
